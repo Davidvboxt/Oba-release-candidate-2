@@ -882,7 +882,7 @@
 
 	.wrapper-layout {
 		width: 100%;
-		height: 100%;
+		height: 111vh;
 		position: sticky;
 		left: 0;
 		position: absolute;
@@ -898,7 +898,6 @@
 		align-items: center;
 		justify-content: center;
 		background-color: white;
-		background-color: var(--primary-accent-color);
 		left: 317px;
 		position: absolute;
 		top: 89px;
@@ -923,7 +922,7 @@
 		display: flex;
 		align-items: flex-start;
 		transition: 0.6s cubic-bezier(0.28, -0.03, 0, 0.99);
-		box-shadow: 0px 10px 7px -5px rgba(0, 0, 0, 0.8);
+		box-shadow: 0px 10px 15px -5px rgba(0, 0, 0, 0.8);
 		background-color: white;
 	}
 
@@ -938,9 +937,10 @@
 		top: 20px;
 		right: 22px;
 		border-radius: 10px;
-		padding: 10px 14px 10px 14px;
-		background-color: white;
-		width: 37px;
+		padding: 10px 20px 10px 18px;
+		background-color: var(--primary-accent-color);
+		color: white;
+		width: 45px;
 	}
 
 	.card > .row > .icon {
@@ -990,17 +990,17 @@
 		transform: translateY(0) !important;
 	}
 
-	.card[for='c1'] {
-		background-image: url('./img1.jpeg');
+	.card[for='c1']{
+		background-image: url('https://i.pinimg.com/originals/35/f6/51/35f651cfcd00865cda4b101915e48129.jpg');
 	}
 	.card[for='c2'] {
-		background-image: url('./img2.jpeg');
+		background-image: url('https://marketplace.canva.com/EAE6L2Fqc6Y/1/0/1600w/canva-blue-minimalist-business-zoom-virtual-background-QrvNRj4gEFY.jpg');
 	}
 	.card[for='c3'] {
-		background-image: url('./img3.jpeg');
+		background-image: url('https://static.vecteezy.com/system/resources/previews/014/499/595/non_2x/minimalist-background-blue-pastel-line-abstract-free-vector.jpg');
 	}
 	.card[for='c4'] {
-		background-image: url('./img4.jpeg');
+		background-image: url('https://www.bhmpics.com/downloads/minimal-sky-material-Wallpapers/23.9b1989a69efcd6528a84ea05ef2924d9.jpg');
 	}
 
 	main {
@@ -1197,5 +1197,4 @@
 	.card-info span {
 		font-weight: 600;
 	}
-
 </style>
