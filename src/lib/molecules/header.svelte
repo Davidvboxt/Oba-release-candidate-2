@@ -20,23 +20,16 @@
 	// console.log(cardData)
 
 	onMount(() => {
+		// zoekveld submit
 		const searchInput = document.querySelector('#searchQueryInput');
-		const searchButton = document.querySelector('#search-open');
-		const searchButtonClose = document.querySelector('#search-closed');
-		const positionChange = document.querySelector('#search-box');
-
-		let searchField = document.querySelector('#mobile-search-overlay');
-
 		searchInput.addEventListener('input', submitted);
 
-		searchButton.addEventListener('click', classToggle);
-		searchButtonClose?.addEventListener('click', classToggle);
-		positionChange?.addEventListener('click', classToggle);
+		//
+		const searchField = document.querySelector('#search-field');
+		searchField?.addEventListener('click', classToggle);
 
 		function classToggle() {
 			searchField.classList.toggle('opened');
-			searchButtonClose.classList.toggle('openend-button');
-			positionChange.classList.toggle('position-change');
 		}
 
 		// PE Zet iets uit wanner Javascript niet werkt
@@ -73,7 +66,7 @@
 <label for="check">
 	<span class="opened"></span>
 	<span class="openend-button"></span>
-	<span class="position-change"></span>
+	<span class="search-field-mobile"></span>
 	<span class="" id="btn"
 		><svg
 			width="30px"
@@ -309,6 +302,28 @@
 						<span>Betalingen</span>
 					</a>
 				</li>
+				<li>
+					<a href="/famillie-overzicht">
+						<svg
+							width="30px"
+							height="30px"
+							viewBox="-6.4 -6.4 76.80 76.80"
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							stroke="#ffffff"
+							stroke-width="3.2"
+							><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g
+								id="SVGRepo_tracerCarrier"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							></g><g id="SVGRepo_iconCarrier"
+								><circle cx="32" cy="32" r="24"></circle><polyline points="40 44 32 32 32 16"
+								></polyline></g
+							></svg
+						>
+						<span>Famillie overzicht</span>
+					</a>
+				</li>
 			</ul>
 		</div>
 
@@ -345,66 +360,7 @@
 	</div>
 </nav>
 
-<section id="mobile-search-overlay">
-	<div id="search-bar" class="search-bar-mobile" on:click={openDialog}>
-		<form action="" on:submit={submitted} class="search-bar-form">
-			<input
-				id="searchQueryInput"
-				class="search-input-mobile"
-				type="text"
-				name="search"
-				bind:value
-				autocomplete="off"
-				placeholder="Waar ben je naar opzoek?"
-			/>
-			<a
-				class="search-submit-mobile"
-				id="searchQuerySubmit"
-				type="submit"
-				name="searchQuerySubmit"
-				href={value}
-			>
-				<svg style="width:24px;height:24px" viewBox="0 0 24 24"
-					><path
-						fill="#666666"
-						d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z"
-					/>
-				</svg>
-			</a>
-		</form>
-	</div>
-
-	{#if showDialog}
-		<div class="mobile-search-bar-data" id="model">
-			<p class="search-bar-data-title">Je zoekt: <span>{value}</span></p>
-			<!-- <article>
-			<button class="close-button" on:click={closeDialog}>X</button>
-		</article> -->
-			{#if error}
-				<h2>{error}</h2>
-			{:else}
-				<ul>
-					{#each Object.values(cardData) as card}
-						<a href={card.detailLink}>
-							<li class="card-data">
-								<img
-									src={card.coverimages[0]}
-									alt="foto van {card.frabl.key1}"
-									loading="lazy"
-									width="50"
-									height="50"
-								/>
-								<p class="booktitle">{card.frabl.key1}</p>
-							</li>
-						</a>
-					{/each}
-				</ul>
-			{/if}
-		</div>
-	{/if}
-</section>
-
-<section id="desktop-search-overlay">
+<section id="search-field ">
 	<div id="search-box">
 		<input type="checkbox" id="search" />
 		<label for="search">
@@ -437,8 +393,8 @@
 			>
 		</label>
 
-		<div id="search-bar" class="search-bar">
-			<form action="" on:submit={submitted} class="search-bar-form" on:click={openDialog}>
+		<div on:click={openDialog} id="search-bar" class="search-bar">
+			<form action="" on:submit={submitted} class="searchBar">
 				<input
 					id="searchQueryInput"
 					class="search-input"
@@ -466,8 +422,8 @@
 		</div>
 	</div>
 	{#if showDialog}
-		<div class="search-bar-data" id="model">
-			<p class="search-bar-data-title">Je zoekt: <span>{value}</span></p>
+		<div class="model" id="model">
+			<p class="title-hero">Je zoekt: <span>{value}</span></p>
 			<!-- <article>
 				<button class="close-button" on:click={closeDialog}>X</button>
 			</article> -->
@@ -501,18 +457,20 @@
 		margin-left: 100px;
 		transition: all 0.5s ease;
 		position: fixed;
+		z-index: 99;
 	}
 
-	#check:checked ~ #desktop-search-overlay #model {
+	#check:checked ~ section #model {
 		margin-left: 225px;
 	}
 
 	/* HAMBURG SEARCH-BAR*/
-	.search-hamburg-closed,
-	.search-hamburg-open {
+	label #search-closed,
+	label #search-open {
 		position: absolute;
 		cursor: pointer;
 		color: white;
+
 		font-size: 29px;
 		background-color: var(--primary-transparent-color-2);
 		height: 50px;
@@ -523,51 +481,42 @@
 		display: grid;
 		align-items: center;
 		justify-content: center;
-		z-index: 80;
+		z-index: 99;
 	}
-
-	.search-hamburg-closed {
+	label #search-closed {
 		border-radius: 0 0 0 5px;
 	}
-
-	label .search-hamburg-open {
+	label #search-open {
 		border-radius: 0 0 5px 5px;
 	}
-
 	#search {
 		display: none;
 	}
-
 	#search-bar {
 		transition: all 0.8s ease;
 	}
 
-	label .search-hamburg-closed {
+	label #search-closed {
 		opacity: 0;
 		visibility: hidden;
 	}
-
-	#search:checked ~ label .search-hamburg-open {
+	#search:checked ~ label #search-open {
 		opacity: 0;
 		visibility: hidden;
 	}
-
-	#search:checked ~ label .search-hamburg-closed {
+	#search:checked ~ label #search-closed {
 		opacity: 1;
 		visibility: visible;
 		height: 50px;
 		width: 50px;
 	}
-
 	#search:checked ~ #search-bar {
 		width: 21.25rem;
 	}
-
 	#search:checked ~ div .search-submit {
 		width: 3.5rem;
 		height: 2.8rem;
 	}
-
 	#search:checked ~ div .search-input {
 		padding: 0 3.5rem 0 1.5rem;
 	}
@@ -585,7 +534,7 @@
 		width: 100%;
 	}
 
-	.search-bar-form {
+	.searchBar {
 		width: 100%;
 		display: flex;
 		flex-direction: row;
@@ -643,12 +592,12 @@
 		margin-left: 325px;
 	}
 
-	#desktop-search-overlay {
+	#search-field {
 		position: relative;
 		transition: all 0.5s ease;
 	}
 
-	.search-bar-data {
+	.model {
 		backdrop-filter: blur(10px); /* Adjust the blur amount as needed */
 		-webkit-backdrop-filter: blur(10px); /* Safari support */
 		/* Fallback for browsers that do not support backdrop-filter */
@@ -670,8 +619,8 @@
 		transition: all 0.5s ease;
 	}
 
-	.search-bar-data li,
-	.mobile-search-bar-data li {
+	.model li,
+	.mobile-model li {
 		list-style: none;
 		/* border-bottom: 1px solid rgb(172, 171, 171); */
 		display: flex;
@@ -681,44 +630,44 @@
 		transition: all 0.3s ease;
 	}
 
-	.search-bar-data li img,
-	.mobile-search-bar-data li img {
+	.model li img,
+	.mobile-model li img {
 		min-width: 50px;
 	}
 
-	.search-bar-data ul,
-	.mobile-search-bar-data ul {
+	.model ul,
+	.mobile-model ul {
 		padding: 1.5rem;
 	}
 
-	.search-bar-data p,
+	.model p,
 	span,
-	.mobile-search-bar-data p,
+	.mobile-model p,
 	span {
 		color: var(--primary-light-color);
 	}
 
-	.search-bar-data h2,
-	.mobile-search-bar-data h2 {
+	.model h2,
+	.mobile-model h2 {
 		color: var(--primary-light-color);
 		padding: 1.5rem;
 		text-align: center;
 	}
 
-	.search-bar-data a,
-	.mobile-search-bar-data a {
+	.model a,
+	.mobile-model a {
 		text-decoration: none;
 		color: var(--primary-light-color);
 	}
 
-	.search-bar-data h2,
-	.mobile-search-bar-data h2 {
+	.model h2,
+	.mobile-model h2 {
 		color: var(--primary-light-color);
 		padding: 1.5rem;
 		text-align: center;
 	}
 
-	.search-bar-data-title{
+	.title-hero {
 		font:
 			700 20px 'Oswald',
 			sans-serif;
@@ -749,7 +698,7 @@
 		text-transform: capitalize;
 	}
 
-	.mobile-search-bar-data {
+	.mobile-model {
 		backdrop-filter: none;
 		-webkit-backdrop-filter: none;
 		position: fixed;
@@ -769,6 +718,7 @@
 		margin-left: 0 !important;
 		margin-top: 18px;
 	}
+
 	/* END SEARCHBAR */
 
 	/* NAVIGATION MENU */
@@ -779,7 +729,6 @@
 		justify-content: space-between;
 		font: 'Oswald', sans-serif;
 	}
-
 	.sidebar {
 		position: fixed;
 		width: 250px;
@@ -796,43 +745,47 @@
 		align-items: center;
 		position: relative;
 	}
-
 	header .profile-img {
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		margin-left: 40px;
 	}
-
 	header .profile-img img {
 		width: 2.7rem;
 		height: 2.7rem;
 		margin-right: 15px;
 		border-radius: 70%;
 	}
-
 	header .profile-text {
 		display: flex;
 		flex-direction: column;
 		color: white;
 	}
-
 	header .profile-text .profile-name {
 		margin-top: 2px;
 		font-size: 18px;
 		font-weight: 600;
 	}
-
 	header .profile-text .profile-role {
 		font-size: 16px;
 		margin-top: -2px;
 		display: block;
 	}
+	/* header::after {
+		content: '';
+		position: absolute;
+		width: 185px;
+		bottom: 0;
+		left: 31px;
+		background-color: white;
+		height: 0.5px;
+	} */
+	/* End Header */
 
 	.bottom-content {
 		border-top: 1px solid white;
 	}
-
 	.sidebar a {
 		display: flex;
 		height: 65px;
@@ -848,25 +801,24 @@
 		text-decoration: none;
 		align-items: center;
 	}
-
 	.menu-bar svg {
 		margin-right: 10px;
 	}
-
 	a:focus,
 	a:hover {
 		border-left: 5px solid white;
 	}
-
+	.sidebar a i {
+		font-size: 23px;
+		margin-right: 16px;
+	}
 	.menu-bar a span {
 		letter-spacing: 1px;
 		text-transform: uppercase;
 	}
-
 	#check {
 		display: none;
 	}
-
 	label #btn,
 	label #cancel {
 		position: fixed;
@@ -886,37 +838,30 @@
 		justify-content: center;
 		z-index: 99;
 	}
-
 	label #cancel {
 		opacity: 0;
 		visibility: hidden;
 	}
-
 	#check:checked ~ .sidebar {
 		left: 0;
 	}
-
 	#check:checked ~ label #btn {
 		margin-left: 250px;
 		opacity: 0;
 		visibility: hidden;
 	}
-
 	#check:checked ~ label #cancel {
 		margin-left: 250px;
 		opacity: 1;
 		visibility: visible;
 		border-radius: 0 0 5px 0;
 	}
+
 	/* EIND NAVIGATION MENU */
 
 	/* tablet breakpoint */
 	@media (max-width: 960px) {
-		.search-bar-data {
-			display: none;
-		}
-
-		#mobile-search-overlay {
+		.opened {
 			background-color: var(--primary-accent-color);
 			width: 100vw;
 			height: 100vh;
@@ -928,33 +873,15 @@
 			display: none;
 		}
 
-		.search-hamburg-closed:checked ~ #desktop-search-overlay #search-box {
-			margin-left: 10px !important;
-		}
-
-		.opened {
-			display: block !important;
-		}
-
-		.openend-button {
-			position: fixed !important;
-			top: 0;
-			left: 0;
-			z-index: 1000 !important;
-		}
-
-		.position-change {
-			position: static !important;
+		#search-box {
+			position: relative;
+			margin-left: 100px;
+			transition: all 0.5s ease;
+			position: fixed;
+			width: 100%;
 		}
 	}
 
 	@media (min-width: 960px) {
-		#mobile-search-overlay {
-			display: none;
-		}
-
-		.opened {
-			display: none;
-		}
 	}
 </style>
