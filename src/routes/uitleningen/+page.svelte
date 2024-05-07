@@ -1,5 +1,5 @@
 <script>
-	import { SmallCarrousel, Table, Header} from '$lib/index.js';
+	import { SmallCarrousel, Table, Header, BreadCrumbs } from '$lib/index.js';
 	export let data;
 </script>
 
@@ -9,6 +9,10 @@
 	/>
 	<!-- menu  -->
 </header>
+
+<nav>
+	<BreadCrumbs />
+</nav>
 
 <section>
 	<h1>Uitleningen</h1>

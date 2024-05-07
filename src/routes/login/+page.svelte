@@ -1,5 +1,6 @@
 <script>
 	import { onMount } from 'svelte';
+	import { BreadCrumbs } from '$lib/index.js';
 
 	export let data;
 
@@ -15,6 +16,10 @@
 		}
 	});
 </script>
+
+<nav>
+	<BreadCrumbs />
+</nav>
 
 <section>
 	<div>
