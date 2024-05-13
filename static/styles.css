@@ -112,11 +112,3 @@ p {
 	}
 
 }
-
-body:has(#checky:checked) .wrapper-layout {
-	display: none !important;
-}
-
-body:has(#test:checked) .wrapper-layout {
-	display: block;
-}
