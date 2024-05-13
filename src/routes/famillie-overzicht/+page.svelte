@@ -520,7 +520,7 @@
 
 <style>
 	main {
-		padding: 0px 0px 10px;
+		padding: 0px 20px 10px 20px;
 		margin: 0px auto;
 		max-width: 1184px;
 		width: 100%;
@@ -602,7 +602,8 @@
 
 	.users-overview {
 		display: flex;
-		flex-flow: row;
+		flex-wrap: wrap;
+		gap: 20px;
 		width: auto;
 		height: auto;
 		box-sizing: border-box;
@@ -613,9 +614,6 @@
 	}
 
 	.card-user {
-		display: flex;
-		flex-flow: column;
-		width: auto;
 		height: 100%;
 		box-sizing: border-box;
 		flex-grow: 1;
@@ -631,12 +629,10 @@
 		cursor: auto;
 	}
 
-	.card-user:not(:first-child) {
-		margin-left: 16px;
-	}
 
 	.card-img {
 		margin: 26px auto 0 auto;
+		text-align: center;
 	}
 
 	.card-img svg {
@@ -700,7 +696,6 @@
 		text-decoration: none;
 		line-height: 1.4;
 		border-radius: 8px;
-
 	}
 
 	.card-allert-grey {
