@@ -7,7 +7,9 @@
 		LogoRed,
 		LogoBlack,
 		Header,
-		HeroLogo
+		HeroLogo,
+		ArrowTwoLeft,
+		ArrowTwoRight,
 	} from '$lib/index.js';
 	import { onMount } from 'svelte';
 
@@ -83,20 +85,12 @@
 			<div class="nav-btn-right">
 				<div id="button-prev-1" class="carousel-btn prev-btn">
 					<button class="icon icon-right">
-						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-							><path
-								d="M15.293 3.293 6.586 12l8.707 8.707 1.414-1.414L9.414 12l7.293-7.293-1.414-1.414z"
-							/></svg
-						>
+						<ArrowTwoRight />
 					</button>
 				</div>
 				<div id="button-next-1" class="carousel-btn next-btn">
 					<button class="icon icon-right">
-						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-							><path
-								d="M7.293 4.707 14.586 12l-7.293 7.293 1.414 1.414L17.414 12 8.707 3.293 7.293 4.707z"
-							/></svg
-						>
+						<ArrowTwoLeft />
 					</button>
 				</div>
 			</div>
@@ -130,20 +124,12 @@
 			<div class="nav-btn-left">
 				<div id="button-prev-2" class="carousel-btn prev-btn">
 					<button class="icon icon-left">
-						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-							><path
-								d="M15.293 3.293 6.586 12l8.707 8.707 1.414-1.414L9.414 12l7.293-7.293-1.414-1.414z"
-							/></svg
-						>
+						<ArrowTwoRight />
 					</button>
 				</div>
 				<div id="button-next-2" class="carousel-btn next-btn">
 					<button class="icon icon-left">
-						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-							><path
-								d="M7.293 4.707 14.586 12l-7.293 7.293 1.414 1.414L17.414 12 8.707 3.293 7.293 4.707z"
-							/></svg
-						>
+						<ArrowTwoLeft />
 					</button>
 				</div>
 			</div>
@@ -176,20 +162,12 @@
 			<div class="nav-btn-right">
 				<div id="button-prev-3" class="carousel-btn prev-btn">
 					<button class="icon icon-right">
-						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-							><path
-								d="M15.293 3.293 6.586 12l8.707 8.707 1.414-1.414L9.414 12l7.293-7.293-1.414-1.414z"
-							/></svg
-						>
+						<ArrowTwoRight />
 					</button>
 				</div>
 				<div id="button-next-3" class="carousel-btn next-btn">
 					<button class="icon icon-right">
-						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-							><path
-								d="M7.293 4.707 14.586 12l-7.293 7.293 1.414 1.414L17.414 12 8.707 3.293 7.293 4.707z"
-							/></svg
-						>
+						<ArrowTwoLeft />
 					</button>
 				</div>
 			</div>
@@ -220,20 +198,12 @@
 		<article class="nav-btn-center">
 			<div id="button-prev-4" class="carousel-btn prev-btn">
 				<button class="icon icon-right">
-					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-						><path
-							d="M15.293 3.293 6.586 12l8.707 8.707 1.414-1.414L9.414 12l7.293-7.293-1.414-1.414z"
-						/></svg
-					>
+					<ArrowTwoRight />
 				</button>
 			</div>
 			<div id="button-next-4" class="carousel-btn next-btn">
 				<button class="icon icon-right">
-					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-						><path
-							d="M7.293 4.707 14.586 12l-7.293 7.293 1.414 1.414L17.414 12 8.707 3.293 7.293 4.707z"
-						/></svg
-					>
+					<ArrowTwoLeft />
 				</button>
 			</div>
 		</article>
