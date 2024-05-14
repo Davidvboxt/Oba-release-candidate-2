@@ -27,4 +27,27 @@ export { default as SmallCarrousel } from './organisms/smallCarrousel.svelte';
 export { default as LogoBlue } from './assets/oba-logo.webp';
 export { default as LogoRed } from './assets/oba-logo-2.webp';
 export { default as LogoBlack } from './assets/oba-logo-3.webp';
-export { default as Searchsvg } from './assets/search.svg';
+
+// Hier export je alle svg's ---------------------------------------------------------------------------------------------------------------
+// Hier export je alle svg's ---------------------------------------------------------------------------------------------------------------
+// Hier export je alle svg's ---------------------------------------------------------------------------------------------------------------
+export { default as Addsvg } from './svg/add.svelte';
+export { default as Pencilsvg } from './svg/pencil.svelte';
+export { default as AvatarOne  } from './svg/avatarOne.svelte';
+export { default as AvatarTwo  } from './svg/avatarTwo.svelte';
+export { default as AvatarThree  } from './svg/avatarThree.svelte';
+export { default as AvatarFour  } from './svg/avatarFour.svelte';
+export { default as ArrowRight  } from './svg/arrowRight.svelte';
+export { default as ArrowLeft  } from './svg/arrowLeft.svelte';
+export { default as Home  } from './svg/home.svelte';
+export { default as Uitleningen  } from './svg/uitleningen.svelte';
+export { default as Reserveringen  } from './svg/reserveringen.svelte';
+export { default as Betalingen  } from './svg/betalingen.svelte';
+export { default as Leeslijst  } from './svg/leeslijst.svelte';
+export { default as Famillie  } from './svg/famillie.svelte';
+export { default as Login  } from './svg/login.svelte';
+export { default as Cross  } from './svg/cross.svelte';
+export { default as SearchTwo  } from './svg/searchTwo.svelte';
+export { default as SearchOne  } from './svg/searchOne.svelte';
+export { default as ArrowTwoLeft  } from './svg/arrowTwoLeft.svelte';
+export { default as ArrowTwoRight  } from './svg/arrowTwoRight.svelte';

@@ -1,10 +1,24 @@
 <script>
-	import { Toggle } from '$lib/index.js';
+	import {
+		Toggle,
+		ArrowRight,
+		ArrowLeft,
+		Home,
+		Uitleningen,
+		Reserveringen,
+		Betalingen,
+		Famillie,
+		Login,
+		Cross,
+		SearchTwo,
+		SearchOne,
+		Leeslijst
+	} from '$lib/index.js';
 	import { onMount } from 'svelte';
 	import { Card } from '$lib/index.js';
-	import { Searchsvg } from '$lib/index.js';
 
 	export let cardData;
+
 	let value = '';
 	let error = '';
 	let showDialog = false;
@@ -67,93 +81,10 @@
 	<span class="opened"></span>
 	<span class="openend-button"></span>
 	<span class="search-field-mobile"></span>
-	<span class="" id="btn"
-		><svg
-			width="30px"
-			height="30px"
-			viewBox="-2.4 -2.4 28.80 28.80"
-			xmlns="http://www.w3.org/2000/svg"
-			fill="#000000"
-			stroke="#000000"
-			><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g
-				id="SVGRepo_tracerCarrier"
-				stroke-linecap="round"
-				stroke-linejoin="round"
-			></g><g id="SVGRepo_iconCarrier">
-				<title></title>
-				<g id="Complete">
-					<g id="arrow-right">
-						<g>
-							<polyline
-								data-name="Right"
-								fill="none"
-								id="Right-2"
-								points="16.4 7 21.5 12 16.4 17"
-								stroke="#ffffff"
-								stroke-linecap="round"
-								stroke-linejoin="round"
-								stroke-width="2"
-							></polyline>
-							<line
-								fill="none"
-								stroke="#ffffff"
-								stroke-linecap="round"
-								stroke-linejoin="round"
-								stroke-width="2"
-								x1="2.5"
-								x2="19.2"
-								y1="12"
-								y2="12"
-							></line>
-						</g>
-					</g>
-				</g>
-			</g></svg
-		></span
-	>
-	<span class="" id="cancel"
-		><svg
-			width="30px"
-			height="30px"
-			viewBox="-2.4 -2.4 28.80 28.80"
-			xmlns="http://www.w3.org/2000/svg"
-			fill="#000000"
-			><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g
-				id="SVGRepo_tracerCarrier"
-				stroke-linecap="round"
-				stroke-linejoin="round"
-			></g><g id="SVGRepo_iconCarrier">
-				<title></title>
-				<g id="Complete">
-					<g id="arrow-left">
-						<g>
-							<polyline
-								data-name="Right"
-								fill="none"
-								id="Right-2"
-								points="7.6 7 2.5 12 7.6 17"
-								stroke="#ffffff"
-								stroke-linecap="round"
-								stroke-linejoin="round"
-								stroke-width="2"
-							></polyline>
-							<line
-								fill="none"
-								stroke="#ffffff"
-								stroke-linecap="round"
-								stroke-linejoin="round"
-								stroke-width="2"
-								x1="21.5"
-								x2="4.8"
-								y1="12"
-								y2="12"
-							></line>
-						</g>
-					</g>
-				</g>
-			</g></svg
-		></span
-	>
+	<span class="" id="btn">
+		<ArrowRight />
+	</span>
+	<span class="" id="cancel"><ArrowLeft /></span>
 </label>
 <nav id="sidebar" class="sidebar">
 	<header>
@@ -173,155 +104,38 @@
 			<ul>
 				<li>
 					<a href="/">
-						<svg
-							width="30px"
-							height="30px"
-							viewBox="-6.4 -6.4 76.80 76.80"
-							xmlns="http://www.w3.org/2000/svg"
-							fill="none"
-							stroke="#ffffff"
-							stroke-width="3.2"
-							><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g
-								id="SVGRepo_tracerCarrier"
-								stroke-linecap="round"
-								stroke-linejoin="round"
-							></g><g id="SVGRepo_iconCarrier"
-								><polygon points="8 24 8 56 56 56 56 24 32 8 8 24"></polygon><polyline
-									points="40 56 40 36 24 36 24 56"
-								></polyline></g
-							></svg
-						>
+						<Home />
 						<span>Home</span>
 					</a>
 				</li>
 				<li>
 					<a href="/leeslijst">
-						<svg
-							width="30px"
-							height="30px"
-							viewBox="-6.4 -6.4 76.80 76.80"
-							xmlns="http://www.w3.org/2000/svg"
-							fill="none"
-							stroke="#ffffff"
-							stroke-width="3.2"
-							><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g
-								id="SVGRepo_tracerCarrier"
-								stroke-linecap="round"
-								stroke-linejoin="round"
-							></g><g id="SVGRepo_iconCarrier"
-								><line x1="20" y1="16" x2="56" y2="16"></line><line x1="20" y1="32" x2="56" y2="32"
-								></line><line x1="20" y1="48" x2="56" y2="48"></line><line
-									x1="8"
-									y1="16"
-									x2="12"
-									y2="16"
-								></line><line x1="8" y1="32" x2="12" y2="32"></line><line
-									x1="8"
-									y1="48"
-									x2="12"
-									y2="48"
-								></line></g
-							></svg
-						>
+						<Leeslijst />
 						<span>Leeslijst</span>
 					</a>
 				</li>
 				<li>
 					<a href="/uitleningen">
-						<svg
-							width="30px"
-							height="30px"
-							viewBox="-6.4 -6.4 76.80 76.80"
-							xmlns="http://www.w3.org/2000/svg"
-							fill="none"
-							stroke="#ffffff"
-							stroke-width="3.2"
-							><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g
-								id="SVGRepo_tracerCarrier"
-								stroke-linecap="round"
-								stroke-linejoin="round"
-							></g><g id="SVGRepo_iconCarrier"
-								><polyline
-									points="32 24 40 24 40 16 56 28 40 40 40 32 24 32 24 24 8 36 24 48 24 40 32 40"
-								></polyline></g
-							></svg
-						>
+						<Uitleningen />
 						<span>Uitleningen</span>
 					</a>
 				</li>
 				<li>
 					<a href="/reserveringen">
-						<svg
-							width="30px"
-							height="30px"
-							viewBox="-6.4 -6.4 76.80 76.80"
-							xmlns="http://www.w3.org/2000/svg"
-							fill="none"
-							stroke="#ffffff"
-							stroke-width="3.2"
-							><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g
-								id="SVGRepo_tracerCarrier"
-								stroke-linecap="round"
-								stroke-linejoin="round"
-							></g><g id="SVGRepo_iconCarrier"
-								><rect x="8" y="8" width="48" height="36"></rect><line
-									x1="12"
-									y1="56"
-									x2="52"
-									y2="56"
-								></line><line x1="40" y1="44" x2="40" y2="56"></line><line
-									x1="24"
-									y1="44"
-									x2="24"
-									y2="56"
-								></line><polyline points="46 16 26 36 18 28"></polyline></g
-							></svg
-						>
+						<Reserveringen />
 						<span>Reserveringen</span>
 					</a>
 				</li>
 				<li>
 					<a href="/betalingen">
-						<svg
-							width="30px"
-							height="30px"
-							viewBox="-6.4 -6.4 76.80 76.80"
-							xmlns="http://www.w3.org/2000/svg"
-							fill="none"
-							stroke="#ffffff"
-							stroke-width="3.2"
-							><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g
-								id="SVGRepo_tracerCarrier"
-								stroke-linecap="round"
-								stroke-linejoin="round"
-							></g><g id="SVGRepo_iconCarrier"
-								><circle cx="32" cy="32" r="24"></circle><polyline points="40 44 32 32 32 16"
-								></polyline></g
-							></svg
-						>
+						<Betalingen />
 						<span>Betalingen</span>
 					</a>
 				</li>
 				<li>
 					<a href="/famillie-overzicht">
-						<svg
-							width="30px"
-							height="30px"
-							viewBox="-6.4 -6.4 76.80 76.80"
-							xmlns="http://www.w3.org/2000/svg"
-							fill="none"
-							stroke="#ffffff"
-							stroke-width="3.2"
-							><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g
-								id="SVGRepo_tracerCarrier"
-								stroke-linecap="round"
-								stroke-linejoin="round"
-							></g><g id="SVGRepo_iconCarrier"
-								><circle cx="32" cy="32" r="24"></circle><polyline points="40 44 32 32 32 16"
-								></polyline></g
-							></svg
-						>
-						<span>Famillie overzicht</span>
+						<Famillie />
+						<span>Famillie</span>
 					</a>
 				</li>
 			</ul>
@@ -331,24 +145,7 @@
 			<ul>
 				<li>
 					<a href="/login">
-						<svg
-							width="30px"
-							height="30px"
-							viewBox="-6.4 -6.4 76.80 76.80"
-							xmlns="http://www.w3.org/2000/svg"
-							fill="none"
-							stroke="#ffffff"
-							stroke-width="3.2"
-							><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g
-								id="SVGRepo_tracerCarrier"
-								stroke-linecap="round"
-								stroke-linejoin="round"
-							></g><g id="SVGRepo_iconCarrier"
-								><polyline points="16 20 16 8 48 8 48 56 16 56 16 44"></polyline><polyline
-									points="28 40 36 32 28 24"
-								></polyline><line x1="8" y1="32" x2="36" y2="32"></line></g
-							></svg
-						>
+						<Login />
 						<span>Log uit</span>
 					</a>
 				</li>
@@ -364,33 +161,12 @@
 	<div id="search-box">
 		<input type="checkbox" id="search" />
 		<label for="search">
-			<span class="search-hamburg-closed" id="search-closed" on:click={closeDialog}
-				><svg
-					fill="#ffffff"
-					width="30px"
-					height="30px"
-					viewBox="-3.2 -3.2 38.40 38.40"
-					xmlns="http://www.w3.org/2000/svg"
-					stroke="#ffffff"
-					><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g
-						id="SVGRepo_tracerCarrier"
-						stroke-linecap="round"
-						stroke-linejoin="round"
-					></g><g id="SVGRepo_iconCarrier">
-						<path
-							d="M18.8,16l5.5-5.5c0.8-0.8,0.8-2,0-2.8l0,0C24,7.3,23.5,7,23,7c-0.5,0-1,0.2-1.4,0.6L16,13.2l-5.5-5.5 c-0.8-0.8-2.1-0.8-2.8,0C7.3,8,7,8.5,7,9.1s0.2,1,0.6,1.4l5.5,5.5l-5.5,5.5C7.3,21.9,7,22.4,7,23c0,0.5,0.2,1,0.6,1.4 C8,24.8,8.5,25,9,25c0.5,0,1-0.2,1.4-0.6l5.5-5.5l5.5,5.5c0.8,0.8,2.1,0.8,2.8,0c0.8-0.8,0.8-2.1,0-2.8L18.8,16z"
-						></path>
-					</g></svg
-				></span
+			<span class="search-hamburg-closed" id="search-closed" on:click={closeDialog}>
+				<Cross /></span
 			>
 			<span class="search-hamburg-open" id="search-open">
-				<svg style="width:24px;height:24px" viewBox="0 0 24 24"
-					><path
-						fill="#ffffff"
-						d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z"
-					/>
-				</svg></span
-			>
+				<SearchOne />
+			</span>
 		</label>
 
 		<div on:click={openDialog} id="search-bar" class="search-bar">
@@ -411,12 +187,7 @@
 					name="searchQuerySubmit"
 					href={value}
 				>
-					<svg style="width:24px;height:24px" viewBox="0 0 24 24"
-						><path
-							fill="#666666"
-							d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z"
-						/>
-					</svg>
+					<SearchTwo />
 				</a>
 			</form>
 		</div>
