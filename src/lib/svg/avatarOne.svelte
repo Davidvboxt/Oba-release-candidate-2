@@ -5,7 +5,8 @@
 	id="Capa_1"
 	viewBox="0 0 144.773 144.773"
 	xml:space="preserve"
-    width="150px" height="150px"
+	width="150px"
+	height="150px"
 >
 	<g>
 		<circle style="fill:#F5C002;" cx="72.387" cy="72.386" r="72.386" />
@@ -81,3 +82,13 @@
 		</g>
 	</g>
 </svg>
+
+<style>
+	svg {
+		margin: auto auto 0 auto;
+		text-align: center;
+		margin: 26px auto 0 auto;
+		text-align: center;
+		display: flex;
+	}
+</style>

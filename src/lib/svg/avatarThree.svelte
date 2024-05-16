@@ -86,3 +86,13 @@
 		</g>
 	</g>
 </svg>
+
+<style>
+	svg {
+		margin: auto auto 0 auto;
+		text-align: center;
+		margin: 26px auto 0 auto;
+		text-align: center;
+		display: flex;
+	}
+</style>
