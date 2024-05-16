@@ -37,3 +37,9 @@
 		<g> </g>
 	</g>
 </svg>
+
+<style>
+	svg {
+		margin-right: 19px;
+	}
+</style>

@@ -6,3 +6,14 @@
 		fill="#080341"
 	/>
 </svg>
+
+<style>
+	svg {
+		display: flex;
+		height: 2rem;
+		flex-wrap: nowrap;
+		justify-content: center;
+		align-items: center;
+		margin-right: 12px;
+	}
+</style>
