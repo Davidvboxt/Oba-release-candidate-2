@@ -15,7 +15,7 @@
 			</p>
 
 			<p>
-				Je kunt natuurlijk ook altijd <a href="/">contact</a> met ons opnemen.
+				Je kunt natuurlijk ook altijd <a href="/chatbot">contact</a> met ons opnemen.
 			</p>
 		</section>
 		<a class="backButton" href="javascript:window.history.back()">Terug naar de vorige pagina</a>
@@ -43,7 +43,7 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		height: 90vh;
+		height: 55vh;
 	}
 
 	.backButton {

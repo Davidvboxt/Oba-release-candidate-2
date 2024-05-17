@@ -1,7 +1,28 @@
 <script>
+	import { onMount } from 'svelte';
 	import { page } from '$app/stores';
 
-	let pathParts = $page.url.pathname.split('/').filter(Boolean);
+	let pathParts = [];
+	let previousPages = [];
+	let hasMorePages = false;
+
+	onMount(() => {
+		previousPages = JSON.parse(sessionStorage.getItem('previousPages')) || [];
+		let currentPage = $page.url.pathname.slice(1);
+		if (previousPages[previousPages.length - 1] !== currentPage) {
+			previousPages.push(currentPage);
+		}
+		if (previousPages.length >= 3) {
+			hasMorePages = true;
+			if (previousPages.length > 3) {
+				previousPages.shift();
+			}
+		} else {
+			hasMorePages = false;
+		}
+		sessionStorage.setItem('previousPages', JSON.stringify(previousPages));
+		pathParts = previousPages;
+	});
 
 	function isCurrentPage(index) {
 		return index === pathParts.length - 1;
@@ -10,14 +31,14 @@
 
 <nav data-sveltekit-reload>
 	<ul>
-		<li>
-			<a class="breadcrumbs {pathParts.length === 0 ? 'current' : ''}" href="/">home</a>
-		</li>
 		{#each pathParts as part, index (index)}
 			<li>
+				{#if hasMorePages && index === 0}
+					<span>...</span>
+				{/if}
 				<a
 					class="breadcrumbs {isCurrentPage(index) ? 'current' : ''}"
-					href={`/${pathParts.slice(0, index + 1).join('/')}`}>{part}</a
+					href={part === 'home' ? '/' : '/' + part}>{part}</a
 				>
 			</li>
 		{/each}
