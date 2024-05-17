@@ -32,175 +32,68 @@
 		</div>
 	</div>
 
-	<article
-		class="card-user one"
-
-	>
-		<div class="card-first-content" style="width: 417px;">
-			<header class="card-header">
-				<h2>Mark</h2>
-				<input type="checkbox" id="one" />
-				<label for="one"><Pencilsvg /></label>
-				<button popovertarget="form-one">Edit</button>
-			</header>
-			<AvatarOne />
-			<ul>
-				<li>Aantal boeken gereserveerd: <strong>7</strong></li>
-				<li>Aantal boeken geleend: <strong>4</strong></li>
-				<li>Geplande activiteiten: <strong>0</strong></li>
-			</ul>
-			<p class="card-allert-first card-allert-grey">Boeken te laat: <strong>5</strong></p>
-			<p class="card-allert-second card-allert-grey">Openstaande boeten: <strong>0</strong></p>
-		</div>
-		<details>
-			<summary>Bewerk</summary>
-			<form id="form-one" popover>
-				<div>
-					<label for="fname">Email</label>
-					<input type="text" id="fname" name="firstname" placeholder="Email" value="mark.oba@gmail.com" />
-
-					<label for="lname">Adress</label>
-					<input type="text" id="lname" name="lastname" placeholder="Adress" value="Your last name.." />
-
-					<label for="country">Postcode</label>
-					<input type="text" id="lname" name="lastname" placeholder="Postcode" value="1422LP" />
-				</div>
-
-				<div class="form-content-right">
-					<label for="fname">Telefoon nummer</label>
-					<input type="text" id="fname" name="firstname" placeholder="Telefoon nummer" value="0615609827" />
-
-					<label for="country">Abbonoment type</label>
-					<select id="country" name="country">
-						<option value="australia">Type 1</option>
-						<option value="canada">Type 2</option>
-						<option value="usa">Type 3</option>
-					</select>
-
-					<label for="country">Thema kleur</label>
-					<select id="country" name="country">
-						<option value="australia">Blauw</option>
-						<option value="canada">Rood</option>
-						<option value="usa">Groen</option>
-					</select>
-
-
-					<input type="submit" value="Submit" />
-				</div>
-			</form>
-		</details>
+	<article class="card-user">
+		<header class="card-header">
+			<h2>Mark</h2>
+			<Pencilsvg />
+		</header>
+		<AvatarOne />
+		<ul>
+			<li>Aantal boeken gereserveerd: <strong>7</strong></li>
+			<li>Aantal boeken geleend: <strong>4</strong></li>
+			<li>Geplande activiteiten: <strong>0</strong></li>
+		</ul>
+		<p class="card-allert-first card-allert-grey">Boeken te laat: <strong>5</strong></p>
+		<p class="card-allert-second card-allert-grey">Openstaande boeten: <strong>0</strong></p>
 	</article>
 
-	<article class="card-user two">
-		<div class="card-first-content">
-			<header class="card-header">
-				<h2>Lisa</h2>
-				<input type="checkbox" id="two" />
-				<label for="two"><Pencilsvg /></label>
-			</header>
-			<AvatarTwo />
-			<ul>
-				<li>Aantal boeken gereserveerd: <strong>7</strong></li>
-				<li>Aantal boeken geleend: <strong>3</strong></li>
-				<li>Geplande activiteiten: <strong>1</strong></li>
-			</ul>
-			<p class="card-allert-first card-allert-grey">Boeken te laat: <strong>3</strong></p>
-			<p class="card-allert-second card-allert-grey">Openstaande boeten: <strong>0</strong></p>
-		</div>
+	<article class="card-user">
+		<header class="card-header">
+			<h2>Lisa</h2>
+			<Pencilsvg />
+		</header>
+		<AvatarTwo />
+		<ul>
+			<li>Aantal boeken gereserveerd: <strong>7</strong></li>
+			<li>Aantal boeken geleend: <strong>3</strong></li>
+			<li>Geplande activiteiten: <strong>1</strong></li>
+		</ul>
+		<p class="card-allert-first card-allert-grey">Boeken te laat: <strong>3</strong></p>
+		<p class="card-allert-second card-allert-grey">Openstaande boeten: <strong>0</strong></p>
 	</article>
 
-	<article class="card-user three">
-		<div class="card-first-content">
-			<header class="card-header">
-				<h2>Benjamin</h2>
-				<input type="checkbox" id="three" />
-				<label for="three"><Pencilsvg /></label>
-			</header>
-			<AvatarThree />
-			<ul>
-				<li>Aantal boeken gereserveerd: <strong>7</strong></li>
-				<li>Aantal boeken geleend: <strong>0</strong></li>
-				<li>Geplande activiteiten: <strong>0</strong></li>
-			</ul>
-			<p class="card-allert-first card-allert-grey">Boeken te laat: <strong>1</strong></p>
-			<p class="card-allert-second card-allert-red">Openstaande boeten: <strong>2</strong></p>
-		</div>
+	<article class="card-user">
+		<header class="card-header">
+			<h2>Benjamin</h2>
+			<Pencilsvg />
+		</header>
+		<AvatarThree />
+		<ul>
+			<li>Aantal boeken gereserveerd: <strong>7</strong></li>
+			<li>Aantal boeken geleend: <strong>0</strong></li>
+			<li>Geplande activiteiten: <strong>0</strong></li>
+		</ul>
+		<p class="card-allert-first card-allert-grey">Boeken te laat: <strong>1</strong></p>
+		<p class="card-allert-second card-allert-red">Openstaande boeten: <strong>2</strong></p>
 	</article>
 
-	<article class="card-user four">
-		<div class="card-first-content">
-			<header class="card-header">
-				<h2>Menno</h2>
-				<input type="checkbox" id="four" />
-				<label for="four"><Pencilsvg /></label>
-			</header>
-			<AvatarFour />
-			<ul>
-				<li>Aantal boeken gereserveerd: <strong>7</strong></li>
-				<li>Aantal boeken geleend: <strong>3</strong></li>
-				<li>Geplande activiteiten: <strong>1</strong></li>
-			</ul>
-			<p class="card-allert-first card-allert-grey">Boeken te laat: <strong>1</strong></p>
-			<p class="card-allert-second card-allert-grey">Openstaande boeten: <strong>0</strong></p>
-		</div>
+	<article class="card-user">
+		<header class="card-header">
+			<h2>Menno</h2>
+			<Pencilsvg />
+		</header>
+		<AvatarFour />
+		<ul>
+			<li>Aantal boeken gereserveerd: <strong>7</strong></li>
+			<li>Aantal boeken geleend: <strong>3</strong></li>
+			<li>Geplande activiteiten: <strong>1</strong></li>
+		</ul>
+		<p class="card-allert-first card-allert-grey">Boeken te laat: <strong>1</strong></p>
+		<p class="card-allert-second card-allert-grey">Openstaande boeten: <strong>0</strong></p>
 	</article>
 </main>
 
 <style>
-	form {
-		max-width: 0;
-		overflow: hidden;
-
-		border-left: 1px solid rgb(232, 232, 232);
-		background-color: #f2f2f2;
-		display: flex;
-	}
-
-	input[type='checkbox'] {
-	}
-
-	/* Card 1 */
-	#one:checked + article .one {
-		grid-column: span 3;
-		max-width: 100%;
-	}
-
-	#one:checked ~ article #form-one {
-		width: 100%;
-		padding: 28px 12px 28px 12px;
-		border-left: 1px solid rgb(232, 232, 232);
-	}
-
-	.form-content-right {
-		margin-left: 11px;
-		position: relative;
-	}
-
-	input[type='text'],
-	select {
-		width: 100%;
-		padding: 12px 20px;
-		margin: 8px 0 10px 0;
-		display: inline-block;
-		border: 1px solid #ccc;
-		border-radius: 4px;
-		box-sizing: border-box;
-	}
-
-	input[type='submit'] {
-		position: absolute;
-		bottom: 0;
-		right: 5px;
-		width: 40%;
-		background-color: var(--primary-accent-color);;
-		color: white;
-		padding: 10px 20px;
-		margin: 8px 0;
-		border: none;
-		border-radius: 4px;
-		cursor: pointer;
-	}
-
 	main {
 		display: grid;
 		gap: 2em 2em;
@@ -234,7 +127,6 @@
 	}
 
 	.card-user {
-		display: flex;
 		height: 100%;
 		box-sizing: border-box;
 		flex-grow: 1;
@@ -248,10 +140,6 @@
 		overflow: hidden;
 		transition-duration: 100ms;
 		cursor: auto;
-	}
-
-	.card-first-content {
-		width: 100%;
 	}
 
 	.card-header {
