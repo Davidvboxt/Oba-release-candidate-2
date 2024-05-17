@@ -15,5 +15,6 @@
 		justify-content: center;
 		align-items: center;
 		margin-right: 12px;
+		cursor: pointer;
 	}
 </style>
