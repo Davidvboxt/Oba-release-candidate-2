@@ -44,7 +44,7 @@ export { default as Uitleningen  } from './svg/uitleningen.svelte';
 export { default as Reserveringen  } from './svg/reserveringen.svelte';
 export { default as Betalingen  } from './svg/betalingen.svelte';
 export { default as Leeslijst  } from './svg/leeslijst.svelte';
-export { default as Famillie  } from './svg/famillie.svelte';
+export { default as Familie  } from './svg/familie.svelte';
 export { default as Login  } from './svg/login.svelte';
 export { default as Cross  } from './svg/cross.svelte';
 export { default as SearchTwo  } from './svg/searchTwo.svelte';

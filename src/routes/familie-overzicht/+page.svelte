@@ -23,7 +23,7 @@
 </header>
 
 <main>
-	<h1>Famillie overzicht</h1>
+	<h1>Familie overzicht</h1>
 	<div class="content">
 		<Addsvg />
 		<div>
@@ -85,7 +85,7 @@
 							<option value="usa">Groen</option>
 						</select>
 
-						<input type="submit" value="Submit" />
+						<input type="submit" value="Pas toe" />
 					</div>
 				</form>
 			</details>
@@ -153,7 +153,7 @@
 							<option value="usa">Groen</option>
 						</select>
 
-						<input type="submit" value="Submit" />
+						<input type="submit" value="Pas toe" />
 					</div>
 				</form>
 			</details>
@@ -221,7 +221,7 @@
 							<option value="usa">Groen</option>
 						</select>
 
-						<input type="submit" value="Submit" />
+						<input type="submit" value="Pas toe" />
 					</div>
 				</form>
 			</details>
@@ -289,7 +289,7 @@
 							<option value="usa">Groen</option>
 						</select>
 
-						<input type="submit" value="Submit" />
+						<input type="submit" value="Pas toe" />
 					</div>
 				</form>
 			</details>

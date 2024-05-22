@@ -7,7 +7,7 @@
 		Uitleningen,
 		Reserveringen,
 		Betalingen,
-		Famillie,
+		Familie,
 		Login,
 		Cross,
 		SearchTwo,
@@ -133,9 +133,9 @@
 					</a>
 				</li>
 				<li>
-					<a href="/famillie-overzicht">
-						<Famillie />
-						<span>Famillie</span>
+					<a href="/familie-overzicht">
+						<Familie />
+						<span>Familie</span>
 					</a>
 				</li>
 			</ul>
