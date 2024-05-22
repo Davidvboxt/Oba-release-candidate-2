@@ -35,7 +35,60 @@
 	<article class="card-user">
 		<header class="card-header">
 			<h2>Mark</h2>
-			<Pencilsvg />
+			<details>
+				<summary></summary>
+				<form id="form-one">
+					<div>
+						<label>Email</label>
+						<input
+							type="text"
+							id="fname"
+							name="firstname"
+							placeholder="Email"
+							value="mark.oba@gmail.com"
+						/>
+
+						<label for="lname">Adress</label>
+						<input
+							type="text"
+							id="lname"
+							name="lastname"
+							placeholder="Adress"
+							value="Librastraat 23"
+						/>
+
+						<label for="country">Postcode</label>
+						<input type="text" id="lname" name="lastname" placeholder="Postcode" value="1422LP" />
+					</div>
+
+					<div class="form-content-right">
+						<label for="fname">Telefoon nummer</label>
+						<input
+							type="text"
+							id="fname"
+							name="firstname"
+							placeholder="Telefoon nummer"
+							value="0615609827"
+						/>
+
+						<label for="country">Abbonoment type</label>
+						<select id="country" name="country">
+							<option value="australia">Type 1</option>
+							<option value="canada">Type 2</option>
+							<option value="usa">Type 3</option>
+						</select>
+
+						<label for="country">Thema kleur</label>
+						<select id="country" name="country">
+							<option value="australia">Blauw</option>
+							<option value="canada">Rood</option>
+							<option value="usa">Groen</option>
+						</select>
+
+						<input type="submit" value="Submit" />
+					</div>
+				</form>
+			</details>
 		</header>
 		<AvatarOne />
 		<ul>
@@ -50,7 +103,60 @@
 	<article class="card-user">
 		<header class="card-header">
 			<h2>Lisa</h2>
-			<Pencilsvg />
+			<details>
+				<summary></summary>
+				<form id="form-one">
+					<div>
+						<label for="fname">Email</label>
+						<input
+							type="text"
+							id="fname"
+							name="firstname"
+							placeholder="Email"
+							value="mark.oba@gmail.com"
+						/>
+
+						<label for="lname">Adress</label>
+						<input
+							type="text"
+							id="lname"
+							name="lastname"
+							placeholder="Adress"
+							value="Librastraat 23"
+						/>
+
+						<label for="country">Postcode</label>
+						<input type="text" id="lname" name="lastname" placeholder="Postcode" value="1422LP" />
+					</div>
+
+					<div class="form-content-right">
+						<label for="fname">Telefoon nummer</label>
+						<input
+							type="text"
+							id="fname"
+							name="firstname"
+							placeholder="Telefoon nummer"
+							value="0615609827"
+						/>
+
+						<label for="country">Abbonoment type</label>
+						<select id="country" name="country">
+							<option value="australia">Type 1</option>
+							<option value="canada">Type 2</option>
+							<option value="usa">Type 3</option>
+						</select>
+
+						<label for="country">Thema kleur</label>
+						<select id="country" name="country">
+							<option value="australia">Blauw</option>
+							<option value="canada">Rood</option>
+							<option value="usa">Groen</option>
+						</select>
+
+						<input type="submit" value="Submit" />
+					</div>
+				</form>
+			</details>
 		</header>
 		<AvatarTwo />
 		<ul>
@@ -65,7 +171,60 @@
 	<article class="card-user">
 		<header class="card-header">
 			<h2>Benjamin</h2>
-			<Pencilsvg />
+			<details>
+				<summary></summary>
+				<form id="form-one">
+					<div>
+						<label for="fname">Email</label>
+						<input
+							type="text"
+							id="fname"
+							name="firstname"
+							placeholder="Email"
+							value="mark.oba@gmail.com"
+						/>
+
+						<label for="lname">Adress</label>
+						<input
+							type="text"
+							id="lname"
+							name="lastname"
+							placeholder="Adress"
+							value="Librastraat 23"
+						/>
+
+						<label for="country">Postcode</label>
+						<input type="text" id="lname" name="lastname" placeholder="Postcode" value="1422LP" />
+					</div>
+
+					<div class="form-content-right">
+						<label for="fname">Telefoon nummer</label>
+						<input
+							type="text"
+							id="fname"
+							name="firstname"
+							placeholder="Telefoon nummer"
+							value="0615609827"
+						/>
+
+						<label for="country">Abbonoment type</label>
+						<select id="country" name="country">
+							<option value="australia">Type 1</option>
+							<option value="canada">Type 2</option>
+							<option value="usa">Type 3</option>
+						</select>
+
+						<label for="country">Thema kleur</label>
+						<select id="country" name="country">
+							<option value="australia">Blauw</option>
+							<option value="canada">Rood</option>
+							<option value="usa">Groen</option>
+						</select>
+
+						<input type="submit" value="Submit" />
+					</div>
+				</form>
+			</details>
 		</header>
 		<AvatarThree />
 		<ul>
@@ -80,7 +239,60 @@
 	<article class="card-user">
 		<header class="card-header">
 			<h2>Menno</h2>
-			<Pencilsvg />
+			<details>
+				<summary></summary>
+				<form id="form-one">
+					<div>
+						<label for="fname">Email</label>
+						<input
+							type="text"
+							id="fname"
+							name="firstname"
+							placeholder="Email"
+							value="mark.oba@gmail.com"
+						/>
+
+						<label for="lname">Adress</label>
+						<input
+							type="text"
+							id="lname"
+							name="lastname"
+							placeholder="Adress"
+							value="Librastraat 23"
+						/>
+
+						<label for="country">Postcode</label>
+						<input type="text" id="lname" name="lastname" placeholder="Postcode" value="1422LP" />
+					</div>
+
+					<div class="form-content-right">
+						<label for="fname">Telefoon nummer</label>
+						<input
+							type="text"
+							id="fname"
+							name="firstname"
+							placeholder="Telefoon nummer"
+							value="0615609827"
+						/>
+
+						<label for="country">Abbonoment type</label>
+						<select id="country" name="country">
+							<option value="australia">Type 1</option>
+							<option value="canada">Type 2</option>
+							<option value="usa">Type 3</option>
+						</select>
+
+						<label for="country">Thema kleur</label>
+						<select id="country" name="country">
+							<option value="australia">Blauw</option>
+							<option value="canada">Rood</option>
+							<option value="usa">Groen</option>
+						</select>
+
+						<input type="submit" value="Submit" />
+					</div>
+				</form>
+			</details>
 		</header>
 		<AvatarFour />
 		<ul>
@@ -94,6 +306,59 @@
 </main>
 
 <style>
+	details > summary {
+		list-style-type: 'Bewerk';
+		cursor: pointer;
+	}
+
+	details[open] > summary {
+		list-style-type: 'Sluit';
+	}
+
+	form {
+		position: absolute;
+		overflow: hidden;
+		border-left: 1px solid rgb(232, 232, 232);
+		background-color: #f2f2f2;
+		display: flex;
+		width: 100%;
+		height: 91%;
+		left: 0;
+		top: 44px;
+		padding: 14px;
+	}
+
+	.form-content-right {
+		margin-left: 11px;
+		position: relative;
+	}
+
+	input[type='text'],
+	select {
+		width: 100%;
+		padding: 12px 10px;
+		margin: 8px 0 10px 0;
+		display: inline-block;
+		border: 1px solid #ccc;
+		border-radius: 4px;
+		box-sizing: border-box;
+	}
+
+	input[type='submit'] {
+		position: absolute;
+		bottom: 0px;
+		right: 0;
+		width: 40%;
+		background-color: var(--primary-accent-color);
+		color: white;
+		padding: 11px 20px;
+		border: none;
+		border-radius: 4px;
+		cursor: pointer;
+		display: grid;
+		justify-content: center;
+	}
+
 	main {
 		display: grid;
 		gap: 2em 2em;
@@ -117,7 +382,7 @@
 
 	h2 {
 		font-size: 1rem;
-		font-weight: 500;
+		font-weight: 400;
 	}
 
 	.content {
@@ -127,12 +392,13 @@
 	}
 
 	.card-user {
+		position: relative;
 		height: 100%;
 		box-sizing: border-box;
 		flex-grow: 1;
 		background-color: rgb(255, 255, 255);
-		min-width: 278px;
-		max-width: 297px;
+		min-width: 378px;
+		max-width: 397px;
 		border-radius: 8px;
 		box-shadow:
 			rgba(0, 0, 0, 0.133) 0px 1.6px 3.6px 0px,
@@ -147,7 +413,7 @@
 		flex-flow: row;
 		width: auto;
 		height: 44px;
-		padding: 12px 0px 12px 16px;
+		padding: 12px 16px;
 		box-sizing: border-box;
 		justify-content: space-between;
 		align-items: center;
@@ -207,7 +473,7 @@
 
 	@media (min-width: 650px) {
 		main {
-			grid-template-columns: repeat(auto-fit, minmax(297px, 1fr));
+			grid-template-columns: repeat(auto-fit, minmax(397px, 1fr));
 			grid-template-rows: 4em 29rem;
 			justify-items: unset;
 		}
@@ -246,12 +512,12 @@
 	@media (min-width: 1230px) {
 		main {
 			margin: auto;
-			grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+			grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
 			max-width: 1184px;
 		}
 
 		.content {
-			grid-column-start: 4;
+			grid-column-start: 3;
 		}
 	}
 </style>
