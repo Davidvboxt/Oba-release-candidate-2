@@ -35,61 +35,61 @@
 	<article class="card-user">
 		<header class="card-header">
 			<h2>Mark</h2>
-			<details>
-				<summary></summary>
-				<form id="form-one">
-					<div>
-						<label>Email</label>
-						<input
-							type="text"
-							id="fname"
-							name="firstname"
-							placeholder="Email"
-							value="mark.oba@gmail.com"
-						/>
-
-						<label for="lname">Adress</label>
-						<input
-							type="text"
-							id="lname"
-							name="lastname"
-							placeholder="Adress"
-							value="Librastraat 23"
-						/>
-
-						<label for="country">Postcode</label>
-						<input type="text" id="lname" name="lastname" placeholder="Postcode" value="1422LP" />
-					</div>
-
-					<div class="form-content-right">
-						<label for="fname">Telefoon nummer</label>
-						<input
-							type="text"
-							id="fname"
-							name="firstname"
-							placeholder="Telefoon nummer"
-							value="0615609827"
-						/>
-
-						<label for="country">Abbonoment type</label>
-						<select id="country" name="country">
-							<option value="australia">Type 1</option>
-							<option value="canada">Type 2</option>
-							<option value="usa">Type 3</option>
-						</select>
-
-						<label for="country">Thema kleur</label>
-						<select id="country" name="country">
-							<option value="australia">Blauw</option>
-							<option value="canada">Rood</option>
-							<option value="usa">Groen</option>
-						</select>
-
-						<input type="submit" value="Pas toe" />
-					</div>
-				</form>
-			</details>
 		</header>
+		<details>
+			<summary></summary>
+			<form id="form-one">
+				<div>
+					<label for="email">Email</label>
+					<input
+						type="text"
+						id="email"
+						name="email"
+						placeholder="Email"
+						value="mark.oba@gmail.com"
+					/>
+
+					<label for="adress">Adress</label>
+					<input
+						type="text"
+						id="adress"
+						name="adress"
+						placeholder="Adress"
+						value="Librastraat 23"
+					/>
+
+					<label for="postcode">Postcode</label>
+					<input type="text" id="postcode" name="postcode" placeholder="Postcode" value="1422LP" />
+				</div>
+
+				<div class="form-content-right">
+					<label for="telefoonnummer">Telefoon nummer</label>
+					<input
+						type="text"
+						id="telefoonnummer"
+						name="telefoonnummer"
+						placeholder="Telefoon nummer"
+						value="0615609827"
+					/>
+
+					<label for="abtype">Abbonoment type</label>
+					<select id="abtype" name="abbonomenttype">
+						<option value="type1">Type 1</option>
+						<option value="type2">Type 2</option>
+						<option value="type3">Type 3</option>
+					</select>
+
+					<label for="thkleur">Thema kleur</label>
+					<select id="thkleur" name="themakleur">
+						<option value="blauw">Blauw</option>
+						<option value="rood">Rood</option>
+						<option value="groen">Groen</option>
+					</select>
+
+					<input type="submit" value="Pas toe" />
+				</div>
+			</form>
+		</details>
 		<AvatarOne />
 		<ul>
 			<li>Aantal boeken gereserveerd: <strong>7</strong></li>
@@ -103,61 +103,61 @@
 	<article class="card-user">
 		<header class="card-header">
 			<h2>Lisa</h2>
-			<details>
-				<summary></summary>
-				<form id="form-one">
-					<div>
-						<label for="fname">Email</label>
-						<input
-							type="text"
-							id="fname"
-							name="firstname"
-							placeholder="Email"
-							value="mark.oba@gmail.com"
-						/>
-
-						<label for="lname">Adress</label>
-						<input
-							type="text"
-							id="lname"
-							name="lastname"
-							placeholder="Adress"
-							value="Librastraat 23"
-						/>
-
-						<label for="country">Postcode</label>
-						<input type="text" id="lname" name="lastname" placeholder="Postcode" value="1422LP" />
-					</div>
-
-					<div class="form-content-right">
-						<label for="fname">Telefoon nummer</label>
-						<input
-							type="text"
-							id="fname"
-							name="firstname"
-							placeholder="Telefoon nummer"
-							value="0615609827"
-						/>
-
-						<label for="country">Abbonoment type</label>
-						<select id="country" name="country">
-							<option value="australia">Type 1</option>
-							<option value="canada">Type 2</option>
-							<option value="usa">Type 3</option>
-						</select>
-
-						<label for="country">Thema kleur</label>
-						<select id="country" name="country">
-							<option value="australia">Blauw</option>
-							<option value="canada">Rood</option>
-							<option value="usa">Groen</option>
-						</select>
-
-						<input type="submit" value="Pas toe" />
-					</div>
-				</form>
-			</details>
 		</header>
+		<details>
+			<summary></summary>
+			<form id="form-one">
+				<div>
+					<label for="email">Email</label>
+					<input
+						type="text"
+						id="email"
+						name="email"
+						placeholder="Email"
+						value="mark.oba@gmail.com"
+					/>
+
+					<label for="adress">Adress</label>
+					<input
+						type="text"
+						id="adress"
+						name="adress"
+						placeholder="Adress"
+						value="Librastraat 23"
+					/>
+
+					<label for="postcode">Postcode</label>
+					<input type="text" id="postcode" name="postcode" placeholder="Postcode" value="1422LP" />
+				</div>
+
+				<div class="form-content-right">
+					<label for="telefoonnummer">Telefoon nummer</label>
+					<input
+						type="text"
+						id="telefoonnummer"
+						name="telefoonnummer"
+						placeholder="Telefoon nummer"
+						value="0615609827"
+					/>
+
+					<label for="abtype">Abbonoment type</label>
+					<select id="abtype" name="abbonomenttype">
+						<option value="type1">Type 1</option>
+						<option value="type2">Type 2</option>
+						<option value="type3">Type 3</option>
+					</select>
+
+					<label for="thkleur">Thema kleur</label>
+					<select id="thkleur" name="themakleur">
+						<option value="blauw">Blauw</option>
+						<option value="rood">Rood</option>
+						<option value="groen">Groen</option>
+					</select>
+
+					<input type="submit" value="Pas toe" />
+				</div>
+			</form>
+		</details>
 		<AvatarTwo />
 		<ul>
 			<li>Aantal boeken gereserveerd: <strong>7</strong></li>
@@ -171,61 +171,61 @@
 	<article class="card-user">
 		<header class="card-header">
 			<h2>Benjamin</h2>
-			<details>
-				<summary></summary>
-				<form id="form-one">
-					<div>
-						<label for="fname">Email</label>
-						<input
-							type="text"
-							id="fname"
-							name="firstname"
-							placeholder="Email"
-							value="mark.oba@gmail.com"
-						/>
-
-						<label for="lname">Adress</label>
-						<input
-							type="text"
-							id="lname"
-							name="lastname"
-							placeholder="Adress"
-							value="Librastraat 23"
-						/>
-
-						<label for="country">Postcode</label>
-						<input type="text" id="lname" name="lastname" placeholder="Postcode" value="1422LP" />
-					</div>
-
-					<div class="form-content-right">
-						<label for="fname">Telefoon nummer</label>
-						<input
-							type="text"
-							id="fname"
-							name="firstname"
-							placeholder="Telefoon nummer"
-							value="0615609827"
-						/>
-
-						<label for="country">Abbonoment type</label>
-						<select id="country" name="country">
-							<option value="australia">Type 1</option>
-							<option value="canada">Type 2</option>
-							<option value="usa">Type 3</option>
-						</select>
-
-						<label for="country">Thema kleur</label>
-						<select id="country" name="country">
-							<option value="australia">Blauw</option>
-							<option value="canada">Rood</option>
-							<option value="usa">Groen</option>
-						</select>
-
-						<input type="submit" value="Pas toe" />
-					</div>
-				</form>
-			</details>
 		</header>
+		<details>
+			<summary></summary>
+			<form id="form-one">
+				<div>
+					<label for="email">Email</label>
+					<input
+						type="text"
+						id="email"
+						name="email"
+						placeholder="Email"
+						value="mark.oba@gmail.com"
+					/>
+
+					<label for="adress">Adress</label>
+					<input
+						type="text"
+						id="adress"
+						name="adress"
+						placeholder="Adress"
+						value="Librastraat 23"
+					/>
+
+					<label for="postcode">Postcode</label>
+					<input type="text" id="postcode" name="postcode" placeholder="Postcode" value="1422LP" />
+				</div>
+
+				<div class="form-content-right">
+					<label for="telefoonnummer">Telefoon nummer</label>
+					<input
+						type="text"
+						id="telefoonnummer"
+						name="telefoonnummer"
+						placeholder="Telefoon nummer"
+						value="0615609827"
+					/>
+
+					<label for="abtype">Abbonoment type</label>
+					<select id="abtype" name="abbonomenttype">
+						<option value="type1">Type 1</option>
+						<option value="type2">Type 2</option>
+						<option value="type3">Type 3</option>
+					</select>
+
+					<label for="thkleur">Thema kleur</label>
+					<select id="thkleur" name="themakleur">
+						<option value="blauw">Blauw</option>
+						<option value="rood">Rood</option>
+						<option value="groen">Groen</option>
+					</select>
+
+					<input type="submit" value="Pas toe" />
+				</div>
+			</form>
+		</details>
 		<AvatarThree />
 		<ul>
 			<li>Aantal boeken gereserveerd: <strong>7</strong></li>
@@ -239,61 +239,61 @@
 	<article class="card-user">
 		<header class="card-header">
 			<h2>Menno</h2>
-			<details>
-				<summary></summary>
-				<form id="form-one">
-					<div>
-						<label for="fname">Email</label>
-						<input
-							type="text"
-							id="fname"
-							name="firstname"
-							placeholder="Email"
-							value="mark.oba@gmail.com"
-						/>
-
-						<label for="lname">Adress</label>
-						<input
-							type="text"
-							id="lname"
-							name="lastname"
-							placeholder="Adress"
-							value="Librastraat 23"
-						/>
-
-						<label for="country">Postcode</label>
-						<input type="text" id="lname" name="lastname" placeholder="Postcode" value="1422LP" />
-					</div>
-
-					<div class="form-content-right">
-						<label for="fname">Telefoon nummer</label>
-						<input
-							type="text"
-							id="fname"
-							name="firstname"
-							placeholder="Telefoon nummer"
-							value="0615609827"
-						/>
-
-						<label for="country">Abbonoment type</label>
-						<select id="country" name="country">
-							<option value="australia">Type 1</option>
-							<option value="canada">Type 2</option>
-							<option value="usa">Type 3</option>
-						</select>
-
-						<label for="country">Thema kleur</label>
-						<select id="country" name="country">
-							<option value="australia">Blauw</option>
-							<option value="canada">Rood</option>
-							<option value="usa">Groen</option>
-						</select>
-
-						<input type="submit" value="Pas toe" />
-					</div>
-				</form>
-			</details>
 		</header>
+		<details>
+			<summary></summary>
+			<form id="form-one">
+				<div>
+					<label for="fname">Email</label>
+					<input
+						type="text"
+						id="email"
+						name="email"
+						placeholder="Email"
+						value="mark.oba@gmail.com"
+					/>
+
+					<label for="adress">Adress</label>
+					<input
+						type="text"
+						id="adress"
+						name="adress"
+						placeholder="Adress"
+						value="Librastraat 23"
+					/>
+
+					<label for="postcode">Postcode</label>
+					<input type="text" id="postcode" name="postcode" placeholder="Postcode" value="1422LP" />
+				</div>
+
+				<div class="form-content-right">
+					<label for="telefoonnummer">Telefoon nummer</label>
+					<input
+						type="text"
+						id="telefoonnummer"
+						name="telefoonnummer"
+						placeholder="Telefoon nummer"
+						value="0615609827"
+					/>
+
+					<label for="abtype">Abbonoment type</label>
+					<select id="abtype" name="abbonomenttype">
+						<option value="type1">Type 1</option>
+						<option value="type2">Type 2</option>
+						<option value="type3">Type 3</option>
+					</select>
+
+					<label for="thkleur">Thema kleur</label>
+					<select id="thkleur" name="themakleur">
+						<option value="blauw">Blauw</option>
+						<option value="rood">Rood</option>
+						<option value="groen">Groen</option>
+					</select>
+
+					<input type="submit" value="Pas toe" />
+				</div>
+			</form>
+		</details>
 		<AvatarFour />
 		<ul>
 			<li>Aantal boeken gereserveerd: <strong>7</strong></li>
@@ -306,63 +306,10 @@
 </main>
 
 <style>
-	details > summary {
-		list-style-type: 'Bewerk';
-		cursor: pointer;
-	}
-
-	details[open] > summary {
-		list-style-type: 'Sluit';
-	}
-
-	form {
-		position: absolute;
-		overflow: hidden;
-		border-left: 1px solid rgb(232, 232, 232);
-		background-color: #f2f2f2;
-		display: flex;
-		width: 100%;
-		height: 91%;
-		left: 0;
-		top: 44px;
-		padding: 14px;
-	}
-
-	.form-content-right {
-		margin-left: 11px;
-		position: relative;
-	}
-
-	input[type='text'],
-	select {
-		width: 100%;
-		padding: 12px 10px;
-		margin: 8px 0 10px 0;
-		display: inline-block;
-		border: 1px solid #ccc;
-		border-radius: 4px;
-		box-sizing: border-box;
-	}
-
-	input[type='submit'] {
-		position: absolute;
-		bottom: 0px;
-		right: 0;
-		width: 40%;
-		background-color: var(--primary-accent-color);
-		color: white;
-		padding: 11px 20px;
-		border: none;
-		border-radius: 4px;
-		cursor: pointer;
-		display: grid;
-		justify-content: center;
-	}
-
 	main {
 		display: grid;
 		gap: 2em 2em;
-		justify-items: center;
+		justify-content: center;
 		padding: 0px 20px 10px 20px;
 		margin: 0px auto;
 		width: 100%;
@@ -471,11 +418,67 @@
 		line-height: 1.4;
 	}
 
-	@media (min-width: 650px) {
+	/* FORMULIER */
+	details > summary {
+		list-style-type: 'Bewerk';
+		cursor: pointer;
+		position: absolute;
+		top: 10px;
+		right: 15px;
+	}
+
+	details[open] > summary {
+		list-style-type: 'Sluit';
+	}
+
+	form {
+		position: absolute;
+		overflow: hidden;
+		border-left: 1px solid rgb(232, 232, 232);
+		background-color: #f2f2f2;
+		display: flex;
+		width: 100%;
+		height: 91%;
+		left: 0;
+		top: 44px;
+		padding: 14px;
+	}
+
+	.form-content-right {
+		margin-left: 11px;
+		position: relative;
+	}
+
+	input[type='text'],
+	select {
+		width: 100%;
+		padding: 12px 10px;
+		margin: 8px 0 10px 0;
+		display: inline-block;
+		border: 1px solid #ccc;
+		border-radius: 4px;
+		box-sizing: border-box;
+	}
+
+	input[type='submit'] {
+		position: absolute;
+		bottom: 0px;
+		right: 0;
+		width: 40%;
+		background-color: var(--primary-accent-color);
+		color: white;
+		padding: 11px 20px;
+		border: none;
+		border-radius: 4px;
+		cursor: pointer;
+		display: grid;
+		justify-content: center;
+	}
+
+	@media (min-width: 855px) {
 		main {
-			grid-template-columns: repeat(auto-fit, minmax(397px, 1fr));
-			grid-template-rows: 4em 29rem;
-			justify-items: unset;
+			max-width: 976px;
+			grid-template-columns: 370px;
 		}
 
 		h1 {
@@ -485,33 +488,10 @@
 		.content {
 			grid-column-start: 2;
 		}
-
-		.card-user {
-			max-width: 100%;
-		}
-	}
-
-	@media (min-width: 960px) {
-		main {
-			max-width: 976px;
-		}
-
-		h1 {
-			grid-column: span 2;
-		}
-
-		.content {
-			grid-column-start: 3;
-		}
-
-		.card-user {
-			max-width: 297px;
-		}
 	}
 
 	@media (min-width: 1230px) {
 		main {
-			margin: auto;
 			grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
 			max-width: 1184px;
 		}
