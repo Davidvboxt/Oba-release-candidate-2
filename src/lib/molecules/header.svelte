@@ -138,6 +138,12 @@
 						<span>Familie</span>
 					</a>
 				</li>
+				<li>
+					<a href="/werkplek">
+						<Familie />
+						<span>Werkplek</span>
+					</a>
+				</li>
 			</ul>
 		</div>
 

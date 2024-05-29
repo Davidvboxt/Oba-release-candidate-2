@@ -5,6 +5,13 @@ import { PUBLIC_API_KEY } from '$env/static/public';
 export async function load() {
 	let query = gql`
 		query uitleenGeschiedenis {
+			werkplekReserverings {
+				obaId
+				id
+				tijd
+				verdieping
+				werkplek
+			  }
 			uitleengeschiedenis1 {
 				image {
 					url
@@ -57,3 +64,4 @@ export async function load() {
 		hygraphData
 	};
 }
+

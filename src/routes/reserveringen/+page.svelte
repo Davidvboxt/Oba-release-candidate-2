@@ -1,11 +1,12 @@
 <script>
 	import { ReservationCard, Header } from '$lib/index.js';
 	export let data;
+	
+	console.log(data.hygraphData.werkplekReserverings)
 
 	import { onMount } from 'svelte';
 
-	onMount(() => {
-	});
+	onMount(() => {});
 </script>
 
 <header>
@@ -17,19 +18,13 @@
 
 <main>
 	<h1>Reserveringen</h1>
-	<!-- <div>
-        {#each Array(2) as _, i}
-            {#each data.hygraphData.uitleengeschiedenis1 as book}
-                <ReservationCard 
-                    bookDetailLink="{book.detailLink}"
-                    bookUrl="{book.image.url}"
-                    bookTitle="{book.title}"
-                    bookAuthor="{book.author}"
-                    bookStatus="{book.beschikbaarheid}"
-                />
-            {/each}
-        {/each}
-    </div> -->
+
+	{#each data.hygraphData.werkplekReserverings as book}
+		<p>{book.obaId}</p>
+		<p>{book.tijd}</p>
+		<p>{book.verdieping}</p>
+		<p>{book.werkplek}</p>
+	{/each}
 
 	<details>
 		<summary>Boeken</summary>
