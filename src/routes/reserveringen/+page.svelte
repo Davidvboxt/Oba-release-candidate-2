@@ -1,5 +1,5 @@
 <script>
-	import { ReservationCard, Header } from '$lib/index.js';
+	import { ReservationCard, Header, BreadCrumbs } from '$lib/index.js';
 	export let data;
 
 	import { onMount } from 'svelte';
@@ -14,6 +14,10 @@
 	/>
 	<!-- menu  -->
 </header>
+
+<nav>
+	<BreadCrumbs />
+</nav>
 
 <main>
 	<h1>Reserveringen</h1>

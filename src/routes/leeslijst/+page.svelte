@@ -1,12 +1,10 @@
 <script>
-	import { Card, Header } from '$lib/index.js';
+	import { Card, Header, BreadCrumbs } from '$lib/index.js';
 	import { onMount } from 'svelte';
 
 	export let data;
 
-	onMount(() => {
-
-	});
+	onMount(() => {});
 </script>
 
 <header>
@@ -14,6 +12,11 @@
 		cardData={data.apiBooks.results.concat(data.apiEBooks.results, data.apiAudioBooks.results)}
 	/>
 </header>
+
+<nav>
+	<BreadCrumbs />
+</nav>
+
 <main>
 	<h1>Leeslijst</h1>
 

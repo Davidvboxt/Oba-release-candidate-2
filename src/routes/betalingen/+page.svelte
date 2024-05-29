@@ -1,5 +1,5 @@
 <script>
-	import { Table, Button, Header } from '$lib/index.js';
+	import { Table, Button, Header, BreadCrumbs } from '$lib/index.js';
 	export let data;
 
 	const tellerstand = data.hygraphData.subscriptionCounters[0];
@@ -24,6 +24,10 @@
 		cardData={data.apiBooks.results.concat(data.apiEBooks.results, data.apiAudioBooks.results)}
 	/>
 </header>
+
+<nav>
+	<BreadCrumbs />
+</nav>
 
 <h1>Betalingen</h1>
 
