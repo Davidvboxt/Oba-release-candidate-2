@@ -19,12 +19,14 @@
 		</p>
 	</div>
 	<ul>
-		<li>Adress: Oosterdokskade 143, 1011DL Amsterdam</li>
-		<li>Openingstijden: 10:00 - 17:00</li>
-		<li>Telefoon: +31 (0)205230900</li>
-		<li>E-mail: klantenservice@oba.nl</li>
+		<li><strong>Adress:</strong> Oosterdokskade 143, 1011DL Amsterdam</li>
+		<li><strong>Telefoon:</strong> +31 (0)205230900</li>
+		<li><strong>E-mail:</strong> klantenservice@oba.nl</li>
+		<li><strong>Openingstijden</strong></li>
+		<li>ma/vr 10:00 - 17:00</li>
+		<li>za/zo 10:00 - 17:00</li>
 	</ul>
-	<img height="600" width="450" src={ImgPlattegrond} alt="oosterdok" />
+	<img height="600" width="440" src={ImgPlattegrond} alt="oosterdok" />
 	<div class="card">
 		<h2>Reserveer <span>je werkplek</span></h2>
 
@@ -56,9 +58,9 @@
 
 			<label for="dropdown2">Werkplek</label>
 			<select id="dropdown2" name="werkplek" required>
-				<option value="option1">Werkplek 1</option>
-				<option value="option2">Werkplek 2</option>
-				<option value="option2">Werkplek 3</option>
+				<option value="option1">Werkplek 1 (Rood)</option>
+				<option value="option2">Werkplek 2 (Blauw)</option>
+				<option value="option2">Werkplek 3 (Geel)</option>
 			</select><br />
 
 			<input type="submit" value="Reserveer" />
@@ -68,12 +70,12 @@
 
 <style>
 	main {
-		display: grid;
-		gap: 2em 2em;
-		justify-content: center;
+		display: flex;
+		flex-direction: column;
+		gap: 1.5rem;
+		align-items: center;
 		margin: 0px auto;
 		width: 100%;
-		min-height: 61rem;
 		font-family:
 			'Segoe UI Variable Text',
 			'Segoe UI',
@@ -85,6 +87,7 @@
 			'Helvetica Neue',
 			sans-serif;
 		-webkit-font-smoothing: antialiased;
+		padding: 0 15px 5rem 0;
 	}
 
 	.intro {
@@ -94,17 +97,29 @@
 	}
 
 	ul {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
 		list-style-type: none;
 		padding: 1.75rem;
 		background-color: white;
 		border-radius: 8px;
 		grid-column-start: 2;
-		box-shadow: rgba(0, 0, 0, 0.133) 0px 1.6px 3.6px 0px, rgba(0, 0, 0, 0.11) 0px 0.3px 0.9px 0px;
+		width: 27.5rem;
+		box-shadow:
+			rgba(0, 0, 0, 0.133) 0px 1.6px 3.6px 0px,
+			rgba(0, 0, 0, 0.11) 0px 0.3px 0.9px 0px;
+	}
+
+	li:nth-child(4) {
+		margin-top: 10px;
 	}
 
 	img {
 		border-radius: 8px;
-		box-shadow: rgba(0, 0, 0, 0.133) 0px 1.6px 3.6px 0px, rgba(0, 0, 0, 0.11) 0px 0.3px 0.9px 0px;
+		box-shadow:
+			rgba(0, 0, 0, 0.133) 0px 1.6px 3.6px 0px,
+			rgba(0, 0, 0, 0.11) 0px 0.3px 0.9px 0px;
 	}
 
 	/* FORM */
@@ -112,10 +127,12 @@
 		display: flex;
 		flex-direction: column;
 		width: 100%;
-		max-width: 425px;
+		max-width: 440px;
 		background-color: #fff;
 		border-radius: 10px;
-		box-shadow: rgba(0, 0, 0, 0.133) 0px 1.6px 3.6px 0px, rgba(0, 0, 0, 0.11) 0px 0.3px 0.9px 0px;
+		box-shadow:
+			rgba(0, 0, 0, 0.133) 0px 1.6px 3.6px 0px,
+			rgba(0, 0, 0, 0.11) 0px 0.3px 0.9px 0px;
 		padding: 1.75rem;
 		height: 37.5rem;
 	}
@@ -145,5 +162,37 @@
 	h2 span {
 		font-size: 15px;
 		font-weight: 500;
+	}
+
+	@media (min-width: 990px) {
+		main {
+			display: grid;
+			gap: 2em 2em;
+			justify-content: center;
+		}
+
+		h1 {
+			grid-column: span 1;
+		}
+
+		.content {
+			grid-column-start: 2;
+		}
+	}
+	@media (max-width: 550px) {
+		ul,
+		.card,
+		img,
+		.intro {
+			width: 100%;
+		}
+
+		h1 {
+			grid-column: span 1;
+		}
+
+		.content {
+			grid-column-start: 2;
+		}
 	}
 </style>
