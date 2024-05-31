@@ -58,3 +58,4 @@ export { default as SearchTwo  } from './svg/searchTwo.svelte';
 export { default as SearchOne  } from './svg/searchOne.svelte';
 export { default as ArrowTwoLeft  } from './svg/arrowTwoLeft.svelte';
 export { default as ArrowTwoRight  } from './svg/arrowTwoRight.svelte';
+export { default as Werkplek  } from './svg/werkplek.svelte';

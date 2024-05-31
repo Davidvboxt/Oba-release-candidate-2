@@ -12,7 +12,8 @@
 		Cross,
 		SearchTwo,
 		SearchOne,
-		Leeslijst
+		Leeslijst,
+		Werkplek,
 	} from '$lib/index.js';
 	import { onMount } from 'svelte';
 	import { Card } from '$lib/index.js';
@@ -140,7 +141,7 @@
 				</li>
 				<li>
 					<a href="/werkplek">
-						<Familie />
+						<Werkplek />
 						<span>Werkplek</span>
 					</a>
 				</li>
