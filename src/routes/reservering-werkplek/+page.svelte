@@ -12,13 +12,61 @@
 
 <main>
 	<div class="intro">
-		<h1>Oosterdok</h1>
+		<div class="intro-title">
+			<h1>Oosterdok</h1>
+			<button class="btn-popover" popovertarget="my-popover"
+				><svg
+					xmlns="http://www.w3.org/2000/svg"
+					width="25px"
+					height="25px"
+					viewBox="-0.5 0 25 25"
+					fill="none"
+				>
+					<path
+						d="M12 21.5C17.1086 21.5 21.25 17.3586 21.25 12.25C21.25 7.14137 17.1086 3 12 3C6.89137 3 2.75 7.14137 2.75 12.25C2.75 17.3586 6.89137 21.5 12 21.5Z"
+						stroke="#000000"
+						stroke-width="1.5"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+					/>
+					<path
+						d="M12.9309 8.15005C12.9256 8.39231 12.825 8.62272 12.6509 8.79123C12.4767 8.95974 12.2431 9.05271 12.0008 9.05002C11.8242 9.04413 11.6533 8.98641 11.5093 8.884C11.3652 8.7816 11.2546 8.63903 11.1911 8.47415C11.1275 8.30927 11.1139 8.12932 11.152 7.95675C11.19 7.78419 11.278 7.6267 11.405 7.50381C11.532 7.38093 11.6923 7.29814 11.866 7.26578C12.0397 7.23341 12.2192 7.25289 12.3819 7.32181C12.5446 7.39072 12.6834 7.506 12.781 7.65329C12.8787 7.80057 12.9308 7.97335 12.9309 8.15005ZM11.2909 16.5301V11.1501C11.2882 11.0556 11.3046 10.9615 11.3392 10.8736C11.3738 10.7857 11.4258 10.7057 11.4922 10.6385C11.5585 10.5712 11.6378 10.518 11.7252 10.4822C11.8126 10.4464 11.9064 10.4286 12.0008 10.43C12.094 10.4299 12.1863 10.4487 12.272 10.4853C12.3577 10.5218 12.4352 10.5753 12.4997 10.6426C12.5642 10.7099 12.6143 10.7895 12.6472 10.8767C12.6801 10.9639 12.6949 11.0569 12.6908 11.1501V16.5301C12.6908 16.622 12.6727 16.713 12.6376 16.7979C12.6024 16.8828 12.5508 16.96 12.4858 17.025C12.4208 17.09 12.3437 17.1415 12.2588 17.1767C12.1738 17.2119 12.0828 17.23 11.9909 17.23C11.899 17.23 11.8079 17.2119 11.723 17.1767C11.6381 17.1415 11.5609 17.09 11.4959 17.025C11.4309 16.96 11.3793 16.8828 11.3442 16.7979C11.309 16.713 11.2909 16.622 11.2909 16.5301Z"
+						fill="#000000"
+					/>
+				</svg></button
+			>
+			<div popover id="my-popover">
+				<p>Faciliteiten</p>
+				<ul>
+					<li>Cursus-/vergaderruimte</li>
+					<li>Zaalverhuur</li>
+					<li>Maakplaats</li>
+					<li>Internettoegang</li>
+					<li>Horecagelegenheid (café, eetcafé, leescafé, restaurant)</li>
+					<li>(individuele) werk-/studieplekken</li>
+					<li>Winkel</li>
+					<li>Expositieruimte</li>
+					<li>WiFi</li>
+					<li>Printfaciliteiten</li>
+					<li>Filmzaal</li>
+					<li>(oefen)computers/-laptops</li>
+				</ul>
+				<p>Toegankelijkheid</p>
+				<ul>
+					<li>Lift of traplift verdieping</li>
+					<li>Aangepast sanitair</li>
+					<li>Rolstoeltoegankelijk</li>
+					<li>Rolstoeldoorgankelijk</li>
+					<li>Parkeervoorziening gehandicapten</li>
+				</ul>
+			</div>
+		</div>
 		<p>
 			Reserveer een werkplek in de OBA. Vul hieronder je OBA pasnummer in, de verdieping waar je
 			wilt werken, de werkplek en de datum en tijd dat je wilt komen werken.
 		</p>
 	</div>
-	<ul>
+	<ul class="info">
 		<li><strong>Adress:</strong> Oosterdokskade 143, 1011DL Amsterdam</li>
 		<li><strong>Telefoon:</strong> +31 (0)205230900</li>
 		<li><strong>E-mail:</strong> klantenservice@oba.nl</li>
@@ -33,9 +81,7 @@
 		<form action="/reservering-werkplek" method="POST">
 			<label for="textInput">Je Oba ID</label>
 			<input type="text" id="textInput" name="obaId" required />
-
-			<label for="start">Start date</label>
-
+			<label for="start">Datum</label>
 			<input
 				type="date"
 				id="start"
@@ -45,7 +91,6 @@
 				max="2018-12-31"
 				required
 			/>
-
 			<label for="dropdown1">Verdieping</label>
 			<select id="dropdown1" name="verdieping" required>
 				<option value="option1">Verdieping 1</option>
@@ -87,16 +132,49 @@
 			'Helvetica Neue',
 			sans-serif;
 		-webkit-font-smoothing: antialiased;
-		padding: 0 15px 5rem 0;
+		padding: 0 15px 5rem 15px;
 	}
 
 	.intro {
 		grid-column: span 1;
 		width: 28rem;
 		height: 100%;
+		position: relative;
 	}
 
-	ul {
+	.intro-title {
+		display: flex;
+	}
+
+	.btn-popover {
+		background-color: transparent;
+		border: none;
+		cursor: pointer;
+		margin-left: 8px;
+	}
+
+	[popover] {
+		inset: auto;
+		right: 15px;
+		top: 15px;
+		/* margin: 0; */
+		border-radius: 8px;
+		padding: 1.75rem;
+		width: 290px;
+		height: 350px;
+	}
+
+	[popover] ul {
+		padding-left: 15px;
+	}
+
+	[popover] p {
+		font-size: 1.5rem;
+		font-weight: 600;
+		margin-bottom: 2px;
+	}
+
+	.info {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -111,7 +189,7 @@
 			rgba(0, 0, 0, 0.11) 0px 0.3px 0.9px 0px;
 	}
 
-	li:nth-child(4) {
+	.info li:nth-child(4) {
 		margin-top: 10px;
 	}
 
@@ -174,25 +252,13 @@
 		h1 {
 			grid-column: span 1;
 		}
-
-		.content {
-			grid-column-start: 2;
-		}
 	}
 	@media (max-width: 550px) {
-		ul,
+		.info,
 		.card,
 		img,
 		.intro {
 			width: 100%;
-		}
-
-		h1 {
-			grid-column: span 1;
-		}
-
-		.content {
-			grid-column-start: 2;
 		}
 	}
 </style>
