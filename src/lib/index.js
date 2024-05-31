@@ -33,6 +33,7 @@ export { default as ImgOsdorp } from './assets/osdorp.jpeg';
 export { default as ImgPostjesweg } from './assets/postjesweg.jpeg';
 export { default as ImgRoelof } from './assets/roelof.jpeg';
 export { default as ImgWaterlandplein } from './assets/waterlandplein.jpeg';
+export { default as ImgPlattegrond } from './assets/plattegrond.png';
 
 // Hier export je alle svg's ---------------------------------------------------------------------------------------------------------------
 // Hier export je alle svg's ---------------------------------------------------------------------------------------------------------------
