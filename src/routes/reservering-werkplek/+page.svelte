@@ -1,7 +1,25 @@
 <script>
-	import { Card, Header, ImgPlattegrond } from '$lib/index.js';
+	import { Card, Header, ImgPlattegrond, BoekAnimatie } from '$lib/index.js';
+	import { enhance } from '$app/forms';
 
+	export let form;
 	export let data;
+
+	let loading = false;
+
+	// Custom enhancement function
+	function handleForm() {
+		loading = true;
+
+		return async ({ result, update }) => {
+			// fake 400ms delay voor user feedback
+			await setTimeout(() => {
+				update();
+
+				loading = false;
+			}, 400);
+		};
+	}
 </script>
 
 <header>
@@ -78,21 +96,22 @@
 	<div class="card">
 		<h2>Reserveer <span>je werkplek</span></h2>
 
-		<form action="/reservering-werkplek" method="POST">
-			<label for="textInput">Je Oba ID</label>
-			<input type="text" id="textInput" name="obaId" required />
-			<label for="start">Datum</label>
+		<form action="/reservering-werkplek" method="POST" use:enhance={handleForm}>
+			<label for="obaID">Je Oba ID</label>
+			<input type="text" id="obaID" name="obaId" placeholder="Wat is je Oba ID?" required />
+			<label for="date">Datum</label>
 			<input
 				type="date"
-				id="start"
-				name="tijd"
-				value="2018-07-22"
-				min="2018-01-01"
-				max="2018-12-31"
+				id="date"
+				name="date"
+				value=""
+				min="2024-06-03"
+				max="2025-06-31"
 				required
 			/>
-			<label for="dropdown1">Verdieping</label>
-			<select id="dropdown1" name="verdieping" required>
+			<label for="verdieping">Verdieping</label>
+			<select id="verdieping" name="verdieping" required>
+				<option value="" selected disabled hidden>Welke verdieping?</option>
 				<option value="option1">Verdieping 1</option>
 				<option value="option2">Verdieping 2</option>
 				<option value="option2">Verdieping 3</option>
@@ -101,14 +120,29 @@
 				<option value="option2">Verdieping 6</option>
 			</select><br />
 
-			<label for="dropdown2">Werkplek</label>
-			<select id="dropdown2" name="werkplek" required>
+			<label for="werkplek">Werkplek</label>
+			<select id="werkplek" name="werkplek" value="" required>
+				<option value="" selected disabled hidden>Welke werkplek?</option>
 				<option value="option1">Werkplek 1 (Rood)</option>
 				<option value="option2">Werkplek 2 (Blauw)</option>
 				<option value="option2">Werkplek 3 (Geel)</option>
 			</select><br />
 
-			<input type="submit" value="Reserveer" />
+			<button type="submit">
+				{#if loading}
+					<!-- Aninamtie voor custom enhancement -->
+					<BoekAnimatie />
+				{/if}
+
+				{#if !loading}
+					Reserveer
+				{/if}
+			</button>
+
+			<!-- Melding voor user feedback -->
+			{#if form?.success}
+				<p class:active={form?.success}>Bedankt voor het delen van jouw ervaring!</p>
+			{/if}
 		</form>
 	</div>
 </main>
@@ -211,8 +245,17 @@
 		box-shadow:
 			rgba(0, 0, 0, 0.133) 0px 1.6px 3.6px 0px,
 			rgba(0, 0, 0, 0.11) 0px 0.3px 0.9px 0px;
-		padding: 1.75rem;
+		padding: 1.25rem 1.75rem 1.75rem 1.75rem;
 		height: 37.5rem;
+	}
+
+	form p {
+		background-color: lightgreen;
+		padding: 5px;
+		font-size: 12px;
+		text-align: center;
+		margin-top: 8px;
+		border-radius: 3px;
 	}
 
 	input,
@@ -227,10 +270,28 @@
 		margin-bottom: 1.5rem;
 	}
 
-	input[type='submit'] {
+	button[type='submit'] {
 		cursor: pointer;
 		background-color: var(--primary-accent-color);
 		color: white;
+		width: 100%;
+		border: none;
+		/* padding: 13px; */
+		font-size: 0.95rem;
+		height: 50px;
+		border-radius: 4px;
+		margin-top: 5px;
+	}
+
+	input:valid {
+		border: 1px solid green;
+	}
+	select:valid {
+		border: 1px solid green;
+	}
+
+	h1 {
+		color: var(--primary-accent-color);
 	}
 
 	h2 {
