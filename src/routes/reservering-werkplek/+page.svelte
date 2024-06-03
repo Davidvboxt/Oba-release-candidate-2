@@ -97,21 +97,21 @@
 		<h2>Reserveer <span>je werkplek</span></h2>
 
 		<form action="/reservering-werkplek" method="POST" use:enhance={handleForm}>
-			<label for="obaID">Je Oba ID</label>
-			<input type="text" id="obaID" name="obaId" placeholder="Wat is je Oba ID?" required />
-			<label for="date">Datum</label>
+			<label for="textInput">Je Oba ID</label>
+			<input type="text" id="textInput" name="obaId" placeholder="Wat is je Oba ID?" required />
+			<label for="start">Datum</label>
 			<input
 				type="date"
-				id="date"
-				name="date"
+				id="start"
+				name="tijd"
 				value=""
 				min="2024-06-03"
 				max="2025-06-31"
 				required
 			/>
-			<label for="verdieping">Verdieping</label>
-			<select id="verdieping" name="verdieping" required>
-				<option value="" selected disabled hidden>Welke verdieping?</option>
+			<label for="dropdown1">Verdieping</label>
+			<select id="dropdown1" name="verdieping" required>
+				<option selected disabled hidden>Welke verdieping?</option>
 				<option value="option1">Verdieping 1</option>
 				<option value="option2">Verdieping 2</option>
 				<option value="option2">Verdieping 3</option>
@@ -120,8 +120,8 @@
 				<option value="option2">Verdieping 6</option>
 			</select><br />
 
-			<label for="werkplek">Werkplek</label>
-			<select id="werkplek" name="werkplek" value="" required>
+			<label for="dropdown2">Werkplek</label>
+			<select id="dropdown2" name="werkplek" value="" required>
 				<option value="" selected disabled hidden>Welke werkplek?</option>
 				<option value="option1">Werkplek 1 (Rood)</option>
 				<option value="option2">Werkplek 2 (Blauw)</option>
@@ -141,7 +141,7 @@
 
 			<!-- Melding voor user feedback -->
 			{#if form?.success}
-				<p class:active={form?.success}>Bedankt voor het delen van jouw ervaring!</p>
+				<p class:active={form?.success}>Je reservering is bevestigd!</p>
 			{/if}
 		</form>
 	</div>
@@ -284,9 +284,6 @@
 	}
 
 	input:valid {
-		border: 1px solid green;
-	}
-	select:valid {
 		border: 1px solid green;
 	}
 

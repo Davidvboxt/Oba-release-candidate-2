@@ -19,7 +19,7 @@
 			repeatCount="indefinite"
 			begin="-.2"
 		></animate></rect
-	><rect fill="white" stroke="white" stroke-width="5" width="33" height="30" x="175" y="85"
+	><rect fill="white" stroke="white" stroke-width="5  " width="33" height="30" x="175" y="85"
 		><animate
 			attributeName="opacity"
 			calcMode="spline"
