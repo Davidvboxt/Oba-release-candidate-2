@@ -12,7 +12,8 @@
 		Cross,
 		SearchTwo,
 		SearchOne,
-		Leeslijst
+		Leeslijst,
+		Vestiging,
 	} from '$lib/index.js';
 	import { onMount } from 'svelte';
 	import { Card } from '$lib/index.js';
@@ -136,6 +137,12 @@
 					<a href="/familie-overzicht">
 						<Familie />
 						<span>Familie</span>
+					</a>
+				</li>
+				<li>
+					<a href="/vestigingen">
+						<Vestiging />
+						<span>Werkplek</span>
 					</a>
 				</li>
 			</ul>
