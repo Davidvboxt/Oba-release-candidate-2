@@ -16,7 +16,7 @@
 <main>
 	<h1>Overzicht van alle vestigingen</h1>
 	<section class="overzichtspagina-section overzicht">
-		<div class="vestiging-tegel">
+		<article>
 			<div class="text">
 				<small>Vestiging</small>
 				<h2>Bijlmer</h2>
@@ -29,8 +29,8 @@
 					<img src={ImgBijlmer} alt="boek" />
 				</div>
 			</div>
-		</div>
-		<div class="vestiging-tegel">
+		</article>
+		<article>
 			<div class="text">
 				<small>Vestiging</small>
 				<h2>Oosterdok</h2>
@@ -43,8 +43,8 @@
 					<img src={ImgOosterdok} alt="boek" />
 				</div>
 			</div>
-		</div>
-		<div class="vestiging-tegel">
+		</article>
+		<article>
 			<div class="text">
 				<small>Vestiging</small>
 				<h2>Osdorp</h2>
@@ -57,8 +57,8 @@
 					<img src={ImgOsdorp} alt="boek" />
 				</div>
 			</div>
-		</div>
-		<div class="vestiging-tegel">
+		</article>
+		<article>
 			<div class="text">
 				<small>Vestiging</small>
 				<h2>Postjesweg</h2>
@@ -71,8 +71,8 @@
 					<img src={ImgPostjesweg} alt="boek" />
 				</div>
 			</div>
-		</div>
-		<div class="vestiging-tegel">
+		</article>
+		<article>
 			<div class="text">
 				<small>Vestiging</small>
 				<h2>Roelof</h2>
@@ -85,8 +85,8 @@
 					<img src={ImgRoelof} alt="boek" />
 				</div>
 			</div>
-		</div>
-		<div class="vestiging-tegel">
+		</article>
+		<article>
 			<div class="text">
 				<small>Vestiging</small>
 				<h2>Waterland</h2>
@@ -99,7 +99,7 @@
 					<img src={ImgWaterlandplein} alt="boek" />
 				</div>
 			</div>
-		</div>
+		</article>
 	</section>
 </main>
 
@@ -123,7 +123,7 @@
 
 	}
 
-	.vestiging-tegel {
+	article {
 		width: 37em;
 		color: white;
 		display: flex;
@@ -132,18 +132,18 @@
 		border-radius: 8px;
 	}
 
-	.vestiging-tegel p {
+	article p {
 		font-size: 0.9em;
 		line-height: 23px;
 		color: white;
 	}
 
-	.vestiging-tegel h2 {
+	article h2 {
 		margin: 0;
 		color: white;
 	}
 
-	.vestiging-tegel small {
+	article small {
 		color: white;
 	}
 
@@ -157,14 +157,14 @@
 		color: white;
 	}
 
-	.vestiging-tegel a {
+	article a {
 		color: white;
 		text-decoration: none;
 		padding-bottom: 3px;
 		border-bottom: 2px dashed;
 	}
 
-	.vestiging-tegel .image {
+	article .image {
 		width: 78%;
 		height: 15em;
 		position: relative;
@@ -172,11 +172,11 @@
 		border-radius: 8px;
 	}
 
-	.vestiging-tegel img {
+	article img {
 		width: 140%;
 	}
 
-	.vestiging-tegel .image::before {
+	article .image::before {
 		content: '';
 		position: absolute;
 		left: -6.1em;
@@ -189,18 +189,18 @@
 	}
 
 	@media screen and (max-width: 750px) {
-		.vestiging-tegel {
+		article {
 			display: block;
 			width: 20em;
 		}
-		.vestiging-tegel .image,
+		article .image,
 		.text {
 			width: 100%;
 		}
-		.vestiging-tegel img {
+		article img {
 			width: 160%;
 		}
-		.vestiging-tegel .image::before {
+		article .image::before {
 			width: 120%;
 			height: 40%;
 			top: -5em;
