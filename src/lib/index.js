@@ -28,6 +28,13 @@ export { default as SmallCarrousel } from './organisms/smallCarrousel.svelte';
 export { default as LogoBlue } from './assets/oba-logo.webp';
 export { default as LogoRed } from './assets/oba-logo-2.webp';
 export { default as LogoBlack } from './assets/oba-logo-3.webp';
+export { default as ImgBijlmer } from './assets/bijlmerplein.jpeg';
+export { default as ImgOosterdok } from './assets/oosterdok.jpeg';
+export { default as ImgOsdorp } from './assets/osdorp.jpeg';
+export { default as ImgPostjesweg } from './assets/postjesweg.jpeg';
+export { default as ImgRoelof } from './assets/roelof.jpeg';
+export { default as ImgWaterlandplein } from './assets/waterlandplein.jpeg';
+export { default as ImgPlattegrond } from './assets/plattegrond.png';
 
 // Hier export je alle svg's ---------------------------------------------------------------------------------------------------------------
 // Hier export je alle svg's ---------------------------------------------------------------------------------------------------------------
