@@ -63,7 +63,7 @@
 	<!-- menu  -->
 </header>
 
-<section class="hero-text">
+<section class="hero-text section">
 	<article>
 		<h1>
 			Welkom <span>{hygraphData.families[0].name}</span> bij OBA!
@@ -73,7 +73,7 @@
 	<HeroLogo />
 </section>
 
-<section>
+<section class="section">
 	<article>
 		<h2>Jouw recente leeslijst: <span>boeken<span></span></span></h2>
 		<p>{homepage[1].homepageText}</p>
@@ -110,7 +110,7 @@
 	</article>
 </section>
 
-<section>
+<section class="section">
 	<article class="readinglist-text">
 		<h2>
 			Jouw recente leeslijst: <span>e-boeken<span> </span></span>
@@ -151,7 +151,7 @@
 
 <!-- leeslijst sections zijn precies dezelfde classes, want opmaak is exact hetzelfde elke keer -->
 
-<section class="readinglist-books-section">
+<section class="readinglist-books-section section">
 	<article>
 		<h2>Jouw recente leeslijst: <span>luisterboeken<span></span></span></h2>
 		<p>{homepage[3].homepageText}</p>
@@ -187,7 +187,7 @@
 	</article>
 </section>
 
-<section class="about">
+<section class="about section">
 	<article class="about-text">
 		<h2>
 			Ontdek de Wereld van Leren bij <span>OBA!</span>
@@ -337,7 +337,7 @@
 		cursor: pointer;
 	}
 
-	section {
+	.section {
 		margin: 2rem auto;
 		padding: 1rem;
 		display: flex;
@@ -436,7 +436,7 @@
 	}
 
 	@media only screen and (min-width: 875px) {
-		section {
+		.section {
 			height: 65vh;
 			display: flex;
 			flex-direction: row;

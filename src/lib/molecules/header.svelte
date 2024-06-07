@@ -230,6 +230,9 @@
 </section>
 
 <style>
+	section {
+		margin: 0;
+	}
 	#search-box {
 		position: relative;
 		margin-left: 100px;
