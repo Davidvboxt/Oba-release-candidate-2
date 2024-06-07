@@ -12,7 +12,8 @@
 		Cross,
 		SearchTwo,
 		SearchOne,
-		Leeslijst
+		Leeslijst,
+		Werkplek,
 	} from '$lib/index.js';
 	import { onMount } from 'svelte';
 	import { Card } from '$lib/index.js';
@@ -138,6 +139,12 @@
 						<span>Familie</span>
 					</a>
 				</li>
+				<li>
+					<a href="/werkplek">
+						<Werkplek />
+						<span>Werkplek</span>
+					</a>
+				</li>
 			</ul>
 		</div>
 
@@ -223,6 +230,9 @@
 </section>
 
 <style>
+	section {
+		margin: 0;
+	}
 	#search-box {
 		position: relative;
 		margin-left: 100px;

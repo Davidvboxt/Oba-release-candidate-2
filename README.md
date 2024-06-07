@@ -74,7 +74,7 @@ Om het project te gebruiken, moet je een `.env`-bestand toevoegen aan de hoofdma
 
    ```env
    HYGRAPH_URL="https://voorbeeld.hygraph.com"
-   HYGRAPH_KEY="jouw_hygraph_api_sleutel"
+   VITE_HYGRAPH_KEY="jouw_hygraph_api_sleutel"
    PUBLIC_API_KEY="jouw_oba_public_api_sleutel"
    ```
 

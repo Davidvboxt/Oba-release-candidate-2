@@ -16,6 +16,7 @@ export { default as Nav } from './molecules/nav.svelte';
 export { default as Footer } from './molecules/footer.svelte';
 export { default as HeroLogo } from './molecules/heroLogo.svelte';
 export { default as BreadCrumbs } from './molecules/breadCrumbs.svelte';
+export { default as BoekAnimatie } from './molecules/boekAnimatie.svelte';
 
 // Hier export je alle organisms ------------------------------------------------------------------------------------------------------------
 // Hier export je alle organisms ------------------------------------------------------------------------------------------------------------
@@ -28,6 +29,13 @@ export { default as SmallCarrousel } from './organisms/smallCarrousel.svelte';
 export { default as LogoBlue } from './assets/oba-logo.webp';
 export { default as LogoRed } from './assets/oba-logo-2.webp';
 export { default as LogoBlack } from './assets/oba-logo-3.webp';
+export { default as ImgBijlmer } from './assets/bijlmerplein.jpeg';
+export { default as ImgOosterdok } from './assets/oosterdok.jpeg';
+export { default as ImgOsdorp } from './assets/osdorp.jpeg';
+export { default as ImgPostjesweg } from './assets/postjesweg.jpeg';
+export { default as ImgRoelof } from './assets/roelof.jpeg';
+export { default as ImgWaterlandplein } from './assets/waterlandplein.jpeg';
+export { default as ImgPlattegrond } from './assets/plattegrond.png';
 
 // Hier export je alle svg's ---------------------------------------------------------------------------------------------------------------
 // Hier export je alle svg's ---------------------------------------------------------------------------------------------------------------
@@ -52,3 +60,4 @@ export { default as SearchTwo  } from './svg/searchTwo.svelte';
 export { default as SearchOne  } from './svg/searchOne.svelte';
 export { default as ArrowTwoLeft  } from './svg/arrowTwoLeft.svelte';
 export { default as ArrowTwoRight  } from './svg/arrowTwoRight.svelte';
+export { default as Werkplek  } from './svg/werkplek.svelte';

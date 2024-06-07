@@ -2,7 +2,7 @@
 	import { Footer } from '$lib/index.js';
 
 	import { onNavigate } from '$app/navigation';
-
+ 
 	onNavigate((navigation) => {
 		if (!document.startViewTransition) return;
 
