@@ -1,40 +1,50 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"
-	><rect fill="white" stroke="white" stroke-width="5" width="33" height="30" x="0" y="85"
-		><animate
-			attributeName="opacity"
-			calcMode="spline"
-			dur="1.7"
-			values="1;0;1;"
-			keySplines=".5 0 .5 1;.5 0 .5 1"
-			repeatCount="indefinite"
-			begin="-.4"
-		></animate></rect
-	><rect fill="white" stroke="white" stroke-width="5" width="33" height="30" x="85" y="85"
-		><animate
-			attributeName="opacity"
-			calcMode="spline"
-			dur="1.7"
-			values="1;0;1;"
-			keySplines=".5 0 .5 1;.5 0 .5 1"
-			repeatCount="indefinite"
-			begin="-.2"
-		></animate></rect
-	><rect fill="white" stroke="white" stroke-width="5  " width="33" height="30" x="175" y="85"
-		><animate
-			attributeName="opacity"
-			calcMode="spline"
-			dur="1.7"
-			values="1;0;1;"
-			keySplines=".5 0 .5 1;.5 0 .5 1"
-			repeatCount="indefinite"
-			begin="0"
-		></animate></rect
-	></svg
->
+<svg viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg">
+	<circle
+		class="spin2"
+		cx="400"
+		cy="400"
+		fill="none"
+		r="200"
+		stroke-width="50"
+		stroke="white"
+		stroke-dasharray="700 1400"
+		stroke-linecap="round"
+	/>
+</svg>
 
 <style>
-    svg {
-    height: 50px;
-    width: 100px;
-    }
+	svg {
+		height: 100%;
+		width: 100%;
+	}
+	
+	@keyframes spin {
+		to {
+			transform: rotate(360deg);
+		}
+	}
+
+	@keyframes spin2 {
+		0% {
+			stroke-dasharray: 1, 800;
+			stroke-dashoffset: 0;
+		}
+		50% {
+			stroke-dasharray: 400, 400;
+			stroke-dashoffset: -200px;
+		}
+		100% {
+			stroke-dasharray: 800, 1;
+			stroke-dashoffset: -800px;
+		}
+	}
+
+	.spin2 {
+		transform-origin: center;
+		animation:
+			spin2 1.5s ease-in-out infinite,
+			spin 2s linear infinite;
+		animation-direction: alternate;
+	}
+
 </style>
