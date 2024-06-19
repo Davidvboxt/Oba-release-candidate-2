@@ -143,6 +143,9 @@
 			{#if form?.success}
 				<p class:active={form?.success}>Je reservering is bevestigd!</p>
 			{/if}
+			{#if form?.success}
+				<p class:active={form?.success}>Je reservering is bevestigd!</p>
+			{/if}
 		</form>
 	</div>
 </main>
