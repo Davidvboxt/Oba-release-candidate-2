@@ -6,6 +6,7 @@
 	export let data;
 
 	let loading = false;
+	
 
 	// Custom enhancement function
 	function handleForm() {
@@ -80,8 +81,7 @@
 			</div>
 		</div>
 		<p>
-			Reserveer een werkplek in de OBA. Vul hieronder je OBA pasnummer in, de verdieping waar je
-			wilt werken, de werkplek en de datum en tijd dat je wilt komen werken.
+			Vul in je OBA id, de datum, de verdieping en de werkplek waarin je wilt komen werken.
 		</p>
 	</div>
 	<ul class="info">
@@ -98,15 +98,21 @@
 
 		<form action="/reservering-werkplek" method="POST" use:enhance={handleForm}>
 			<label for="textInput">Je Oba ID</label>
-			<input type="text" id="textInput" name="obaId" placeholder="Wat is je Oba ID?" required />
+			<select id="dropdown3" name="obaId" required>
+				<option selected disabled hidden>Markvos#134</option>
+				<option value="option1">Lisavos#532</option>
+				<option value="option2">Maartenvos#322</option>
+				<option value="option2">Mennovos#901</option>
+			</select><br />
 			<label for="start">Datum</label>
 			<input
 				type="date"
 				id="start"
 				name="tijd"
-				value=""
+				value="24-06-2024"
 				min="2024-06-03"
 				max="2025-06-31"
+				placeholder="24-06-2024"
 				required
 			/>
 			<label for="dropdown1">Verdieping</label>
@@ -140,9 +146,6 @@
 			</button>
 
 			<!-- Melding voor user feedback -->
-			{#if form?.success}
-				<p class:active={form?.success}>Je reservering is bevestigd!</p>
-			{/if}
 			{#if form?.success}
 				<p class:active={form?.success}>Je reservering is bevestigd!</p>
 			{/if}

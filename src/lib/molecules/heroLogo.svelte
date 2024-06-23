@@ -55,47 +55,4 @@
 		transform-origin: center;
 	}
 
-	/* Letter animatie */
-	.letter-animation {
-		animation: letter 2s ease-in-out forwards; /* Adjust duration and timing function as needed */
-		position: relative;
-		z-index: 1;
-		margin-left: 10px;
-	}
-
-	@keyframes letter {
-		0% {
-			translate: -14vw 0;
-		}
-		10% {
-			transform: translate(200px, 0);
-		}
-		90% {
-			transform: rotate(3.1turn);
-			translate: 3vw;
-		}
-		100% {
-			transform: rotate(2.75turn);
-
-			translate: 10px;
-		}
-	}
-
-	@keyframes title {
-		0% {
-			translate: -14vw 0;
-		}
-		10% {
-			transform: translate(200px, 0);
-		}
-		90% {
-			transform: rotate(3.1turn);
-			translate: 3vw;
-		}
-		100% {
-			transform: rotate(2.75turn);
-
-			translate: 10px;
-		}
-	}
 </style>

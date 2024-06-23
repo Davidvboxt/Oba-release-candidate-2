@@ -25,7 +25,7 @@
 	<div>
 		<h1>Welkom bij OBA!</h1>
 		<h3>Inloggen</h3>
-		<form action="#">
+		<form action="/">
 			<label for="fname">OBA-pasnummer</label>
 			<input type="text" id="fname" name="email" placeholder="OBA-pasnummer" />
 			<label for="fname">Vul je wachtwoord in</label>

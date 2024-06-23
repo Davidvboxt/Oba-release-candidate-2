@@ -66,7 +66,7 @@
 <section class="hero-text section">
 	<article>
 		<h1>
-			Welkom <span>{hygraphData.families[0].name}</span> bij OBA!
+			Welkom <span>{hygraphData.families[0].name}</span>!
 		</h1>
 		<p>{homepage[0].homepageText}</p>
 	</article>
@@ -75,7 +75,7 @@
 
 <section class="section">
 	<article>
-		<h2>Jouw recente leeslijst: <span>boeken<span></span></span></h2>
+		<h2>Jouw leeslijst: <span>boeken<span></span></span></h2>
 		<p>{homepage[1].homepageText}</p>
 		<LinkButton buttonText="Bekijk Leeslijst" buttonLink="/leeslijst" />
 	</article>
@@ -113,7 +113,7 @@
 <section class="section">
 	<article class="readinglist-text">
 		<h2>
-			Jouw recente leeslijst: <span>e-boeken<span> </span></span>
+			Jouw leeslijst: <span>e-boeken<span> </span></span>
 		</h2>
 		<p>{homepage[2].homepageText}</p>
 		<LinkButton buttonText="Bekijk Leeslijst" buttonLink="/leeslijst" />
@@ -153,7 +153,7 @@
 
 <section class="readinglist-books-section section">
 	<article>
-		<h2>Jouw recente leeslijst: <span>luisterboeken<span></span></span></h2>
+		<h2>Jouw leeslijst: <span>luisterboeken<span></span></span></h2>
 		<p>{homepage[3].homepageText}</p>
 		<LinkButton buttonText="Bekijk Leeslijst" buttonLink="/leeslijst" />
 	</article>
@@ -381,6 +381,7 @@
 	}
 	.hero-text {
 		justify-content: flex-start;
+		height: 55vh !important;
 	}
 
 	/* Transparantie in de zijkant van de carrousels  */
@@ -391,7 +392,7 @@
 		position: absolute;
 		left: -0.5rem;
 		width: 3rem;
-		height: 100%;
+		height: 82%;
 		background: rgb(255, 255, 255);
 		background: linear-gradient(90deg, rgba(255, 255, 255, 1) 40%, rgba(255, 255, 255, 0) 100%);
 	}
@@ -409,7 +410,7 @@
 		position: absolute;
 		left: -0.5rem;
 		width: 3rem;
-		height: 100%;
+		height: 82%;
 		background: var(--primary-background-color);
 		background: var(--primary-transparent-color);
 	}
@@ -437,7 +438,7 @@
 
 	@media only screen and (min-width: 875px) {
 		.section {
-			height: 65vh;
+			height: 62vh;
 			display: flex;
 			flex-direction: row;
 			justify-content: center;
